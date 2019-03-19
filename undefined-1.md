@@ -29,7 +29,27 @@
 
 
 
-var, let, const 
+#### var, let, const 
+
+var 변수는 중복 선언하면 기존 변수를 덮어쓰지만, let 변수는 중복 선언할 수 없다. 오류를 발생시킨다.
+
+```text
+var name = "홍길동";
+var name = "임꺽정"; // 오류안남
+console.log(name);
 
 
+let name2 = "Hong";
+let name2 = "Goo"; // 오류. 장점 : 프로그램을 더 정교하게 다룰 수 있다.
+console.log(name2);
+```
+
+오류발생의 장점 : 프로그램을 더 정교하게 다룰 수 있다.
+
+const : 상수변수. 값을 한 번 할당하면 값을 변경할 수 없다. 상수 변수는 선언할 때 값을 지정해야 한다.
+
+```text
+const age; // Missing initializer in const declaration 실행 오류
+age = 20;
+```
 
