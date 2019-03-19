@@ -6,4 +6,5 @@
 * [JavaScript?](javascript.md)
 * [Variable](undefined-1.md)
 * [Operator](operator.md)
+* [Type Casting \(type conversion\)](type-casting-type-conversion.md)
 
