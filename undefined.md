@@ -2,7 +2,7 @@
 description: 다른 프로그래머들이 추천해준 방법
 ---
 
-# HowToStudy
+# How to Study
 
 
 
