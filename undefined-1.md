@@ -1,5 +1,9 @@
 # Variable
 
+우리에겐 MDN이 있습니다. [https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Values,\_variables,\_and\_literals](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Values,_variables,_and_literals)
+
+
+
 변수 \(Variable\) : 값을 저장하는 메모리의 이름
 
 변수에 값 할당\(=배정; assignment\)
@@ -31,6 +35,8 @@
 
 
 #### var, let, const 
+
+scope관련 설명 추가 필요 \(구두 설명, MDN\)
 
 var 변수는 중복 선언하면 기존 변수를 덮어쓰지만, let 변수는 중복 선언할 수 없다. 오류를 발생시킨다.
 
