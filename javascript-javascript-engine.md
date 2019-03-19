@@ -1,4 +1,4 @@
-# JavaScript 와 JavaScript Engine의 관계
+# JavaScript and JavaScript Engine
 
 #### \* 자바스크립트
 
