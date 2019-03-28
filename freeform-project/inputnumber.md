@@ -34,7 +34,18 @@
 * keyup :  [https://developer.mozilla.org/en-US/docs/Web/Events/keyup](https://developer.mozilla.org/en-US/docs/Web/Events/keyup) 하단의 예시 참고 
 * blur : [https://developer.mozilla.org/en-US/docs/Web/API/Element/blur\_event](https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event) 
 
-#### keyCode
+#### event 객체 
 
+* [https://blog.sonim1.com/152](https://blog.sonim1.com/152) 참고 
 * event.keyCode, event.which 
+
+#### "use strict";
+
+#### var, let, const
+
+#### IIFE 패턴
+
+#### 전위 증감 연산자, 후위 증감 연산자 
+
+#### 제이쿼리의 장점과 단점, 순수JS도 작성해보기   
 
