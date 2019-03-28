@@ -9,3 +9,7 @@
 * [Type Casting \(type conversion\)](type-casting-type-conversion.md)
 * [Array](array.md)
 
+## freeform project
+
+* [inputNumber](freeform-project/inputnumber.md)
+
