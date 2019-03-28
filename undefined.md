@@ -4,8 +4,6 @@ description: 다른 프로그래머들이 추천해준 방법
 
 # How to Study
 
-
-
 * 시각화! 머릿속에 있는걸 적을  text보다는 **도식화**하라. 
 * Note : 그냥 적지말고, **스터디를 하며 나눠야겠다** 라는 생각으로 하라. 
 
@@ -21,7 +19,7 @@ JavaScript 간단 문법 : [https://www.w3schools.com/js/default.asp](https://ww
 
 프로그래머스\_Hello, JavaScript! : 실습만 해도 좋을 곳 [https://programmers.co.kr/learn/courses/3](https://programmers.co.kr/learn/courses/3) 
 
-프로그래머스\_자바스크립트와 웹 프론트엔드 : 여기서도 실습만 해봐도 좋음  [https://programmers.co.kr/learn/courses/10](https://programmers.co.kr/learn/courses/10)   
+프로그래머스\_자바스크립트와 웹 프론트엔드 :  [https://programmers.co.kr/learn/courses/10](https://programmers.co.kr/learn/courses/10)   
   
 팁! 좀 더 문법에 익숙해졌다면. MDN [https://developer.mozilla.org/ko/docs/Web/JavaScript](https://developer.mozilla.org/ko/docs/Web/JavaScript)
 
