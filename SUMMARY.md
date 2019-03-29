@@ -12,4 +12,5 @@
 ## freeform project
 
 * [inputNumber](freeform-project/inputnumber.md)
+* [Modal \(layer popup\)](freeform-project/modal-layer-popup.md)
 
