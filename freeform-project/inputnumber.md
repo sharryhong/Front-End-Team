@@ -39,13 +39,20 @@
 * [https://blog.sonim1.com/152](https://blog.sonim1.com/152) 참고 
 * event.keyCode, event.which 
 
-#### "use strict";
+### 스터디시 나온 사항 
 
-#### var, let, const
+#### "use strict"; 쓰는 이
 
-#### IIFE 패턴
+#### var, let, const 차이점과 사용시 유의 사
+
+#### IIFE 패턴 사용이유 
 
 #### 전위 증감 연산자, 후위 증감 연산자 
 
 #### 제이쿼리의 장점과 단점, 순수JS도 작성해보기   
+
+```text
+var key = e.keyCode || e.which;
+if(key === 8) return; 
+```
 
