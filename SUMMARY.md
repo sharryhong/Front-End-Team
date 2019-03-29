@@ -4,7 +4,7 @@
 * [How to Study](undefined.md)
 * [JavaScript and JavaScript Engine](javascript-javascript-engine.md)
 * [JavaScript?](javascript.md)
-* [Variable](undefined-1.md)
+* [Variable](variable.md)
 * [Operator](operator.md)
 * [Type Casting \(type conversion\)](type-casting-type-conversion.md)
 * [Array](array.md)
