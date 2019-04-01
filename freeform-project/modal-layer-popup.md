@@ -15,5 +15,16 @@
 
 선택 1 : 팝업이 뜨고 닫힐 때 적절한 애니메이션을 줍니다.
 
-선택 2 : 다양한 상황 대처 \(내용추가예정\)
+선택 2 : 다양한 상황 대처   
+예: 팝업 body부분의 내용이 길어지면 스크롤이 되고, max-height가 적용되어있는데, 높이가 작은 모바일 \(아이폰6 기준, 높이 667px이하\)에서만 max-height를 따로 적용합니다. 
+
+## 참고자료
+
+JavaScript Web API &gt; DOM &gt; Document &gt; Document.querySelector\(\) : [https://developer.mozilla.org/ko/docs/Web/API/Document/querySelector](https://developer.mozilla.org/ko/docs/Web/API/Document/querySelector)
+
+JavaScript Web API &gt; DOM &gt; Element &gt; Element.classList : [https://developer.mozilla.org/ko/docs/Web/API/Element/classList](https://developer.mozilla.org/ko/docs/Web/API/Element/classList)  \(브라우저 호환성체크\) 
+
+
+
+
 
