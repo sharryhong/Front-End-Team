@@ -18,7 +18,7 @@
 
 
 
-### 참고자료 
+## 참고자료 
 
 #### BOM \(Browser Object Model\)
 
@@ -39,7 +39,7 @@
 * [https://blog.sonim1.com/152](https://blog.sonim1.com/152) 참고 
 * event.keyCode, event.which 
 
-### 스터디시 나온 사항 
+## 스터디시 나온 사항  
 
 #### "use strict"; 쓰는 이유 
 
