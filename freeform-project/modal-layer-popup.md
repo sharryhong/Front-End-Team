@@ -18,11 +18,17 @@
 선택 2 : 다양한 상황 대처   
 예: 팝업 body부분의 내용이 길어지면 스크롤이 되고, max-height가 적용되어있는데, 높이가 작은 모바일 \(아이폰6 기준, 높이 667px이하\)에서만 max-height를 따로 적용합니다. 
 
+
+
+> 나중에 pc : 크롬, 사파리, 파이어폭스, mobile: ios, android 에서 테스트하면서 어떤점에 주의하여야 하는지 테스트해보셔도 많은 도움이 될 것 같습니다. :\)
+
 ## 참고자료
 
 JavaScript Web API &gt; DOM &gt; Document &gt; Document.querySelector\(\) : [https://developer.mozilla.org/ko/docs/Web/API/Document/querySelector](https://developer.mozilla.org/ko/docs/Web/API/Document/querySelector)
 
 JavaScript Web API &gt; DOM &gt; Element &gt; Element.classList : [https://developer.mozilla.org/ko/docs/Web/API/Element/classList](https://developer.mozilla.org/ko/docs/Web/API/Element/classList)  \(브라우저 호환성체크\) 
+
+jQuery를 사용하셔도 좋습니다. 
 
 
 
