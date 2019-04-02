@@ -2,15 +2,11 @@
 
 우리에겐 MDN이 있습니다. [https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Values,\_variables,\_and\_literals](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Values,_variables,_and_literals)
 
-
-
 변수 \(Variable\) : 값을 저장하는 메모리의 이름
 
-데이터를 저장하기 위해서는 메모리가 필요하다. 
+데이터를 저장하기 위해서는 메모리가 필요하다.
 
 메모리를 확보하기 위해서 변수 선언 \(RAM중에 OS가 사용하는 영역, 기타 프로그램들이 사용하는 영역이 있다. 남는 메모리 중에 내 프로그램을 실행할 때 필요한 메모리 확보\)
-
-
 
 변수에 값 할당\(=배정; assignment\)
 
@@ -19,8 +15,6 @@
 * 문법
 
   변수명 = 값;
-
-
 
 스태틱 타입 바인딩\(static type binding\)
 
@@ -34,13 +28,11 @@
 * 값을 넣는 순간 그 용도로 자동 설정된다.
 * 예\) JavaScript 등 스크립트 류는 보통 동적 타입 바인딩 방식이다.
 
-프로그램을 짠다는 것 : 사람이 원하는 정보를 뽑아내기 위해 수많은 데이터를 저장   
+프로그램을 짠다는 것 : 사람이 원하는 정보를 뽑아내기 위해 수많은 데이터를 저장  
 : 정형데이터, 비정형 데이터 빅데이터 : 작은 데이터가 계속 대량으로 발생, 보통 log형태일 가능성이 많다. 예\) 쇼핑몰 방문기록 빅데이터를 입력받아 --&gt; 가공 \(개발자가 하는 일\) --&gt; 정보\(information\)를 얻어낸다. 이 데이터들을 저장 : RAM, HDD등에 저장  
 언어를 배울때 첫번째로 메모리를 준비\(변수만들기\)하는 방법을 배운다.
 
-
-
-#### var, let, const 
+## var, let, const
 
 scope관련 설명 추가 필요 \(구두 설명, MDN\)
 

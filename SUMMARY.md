@@ -7,10 +7,10 @@
 
 ## JavaScript lexical grammar
 
-* [Variable](javaScript-lexical-grammar/variable.md)
-* [Operator](javaScript-lexical-grammar/operator.md)
-* [Type Casting \(type conversion\)](javaScript-lexical-grammar/type-casting-type-conversion.md)
-* [Array](javaScript-lexical-grammar/array.md)
+* [Variable](javascript-lexical-grammar/variable.md)
+* [Operator](javascript-lexical-grammar/operator.md)
+* [Type Casting \(type conversion\)](javascript-lexical-grammar/type-casting-type-conversion.md)
+* [Array](javascript-lexical-grammar/array.md)
 
 ## freeform project
 
@@ -23,4 +23,11 @@
 
 ## member's
 
-* [github](members/github.md)
+* [Bean](members/bean.md)
+* [Levi](members/levi.md)
+* [Scarlett](members/scarlett.md)
+* [Selene](members/selene.md)
+* [Sharry](members/sharry.md)
+* [Sonia](members/sonia.md)
+* [Yeony](members/yeony.md)
+
