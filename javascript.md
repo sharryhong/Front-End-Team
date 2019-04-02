@@ -8,3 +8,5 @@
 * typeof : 이것도 연산자. typeof 변수명 : 변수의 타입\(유형\) 알려줌
 * 개발자의 인격 : 꼼꼼!
 
+우리의 MDN [https://developer.mozilla.org/ko/docs/Web/JavaScript](https://developer.mozilla.org/ko/docs/Web/JavaScript) 
+

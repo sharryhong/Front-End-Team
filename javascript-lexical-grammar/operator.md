@@ -6,9 +6,7 @@ description: 연산자
 
 역시 우리에겐 MDN [https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Expressions\_and\_Operators](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Expressions_and_Operators)
 
-
-
-#### 비교 연산자 == vs ===
+## 비교 연산자 == vs ===
 
 "==" 연산자
 
@@ -42,11 +40,9 @@ console.log(a === b); // false
 console.log(a !== b); // true
 ```
 
+## 삼항 연산자
 
-
-#### 삼항 연산자
-
-#### 비트 연산자
+## 비트 연산자
 
 * 비트 단위로 AND, OR, XOR 연산 수행
 
@@ -89,7 +85,5 @@ var mask = 0x34f588; //
 console.log((pixel ^ mask).toString(16)); // 16진수로 표현. 결과 0.
 ```
 
-
-
-팁: javascript에서 숫자 표현은 32비트. 이거 넘어가면 지원하는 것 필요하다. 
+팁: javascript에서 숫자 표현은 32비트. 이거 넘어가면 지원하는 것 필요하다.
 
