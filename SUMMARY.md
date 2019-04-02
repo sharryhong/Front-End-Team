@@ -7,10 +7,10 @@
 
 ## JavaScript lexical grammar
 
-* [Variable](variable.md)
-* [Operator](operator.md)
-* [Type Casting \(type conversion\)](type-casting-type-conversion.md)
-* [Array](array.md)
+* [Variable](javaScript-lexical-grammar/variable.md)
+* [Operator](javaScript-lexical-grammar/operator.md)
+* [Type Casting \(type conversion\)](javaScript-lexical-grammar/type-casting-type-conversion.md)
+* [Array](javaScript-lexical-grammar/array.md)
 
 ## freeform project
 
