@@ -57,7 +57,7 @@ console.log(a1[2].length); // 6
 * [`Array.prototype.sort()`](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 * [`Array.prototype.splice()`](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)`: 배열의 기존 요소 삭제, 교체, 요소 추가 등에 많이 쓰임`
 * [`Array.prototype.toString()`](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/toString)
-* [`Array.prototype.unshift()`](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) `: 새로운 요소를 배열의 맨 앞에 추가하고, 새로운 길이를 반` 
+* [`Array.prototype.unshift()`](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) `: 새로운 요소를 배열의 맨 앞에 추가하고, 새로운 길이를 반환`    
 
 
 
