@@ -63,3 +63,7 @@ console.log(a1[2].length); // 6
 
 * 좋은 메서드들이 많지만 크로스브라우징을 생각하면 아직 사용하지 못할 것들이 많다. 이럴땐 polyfill을 코드에 추가해도 되는데, 해당 메서드 MDN페이지의 하단에 나와있다.  폴리필 코드를 직접 추가해도 되지만 npm으로 추가해서 사용하는 방법도 있다. [https://www.npmjs.com/package/js-polyfills](https://www.npmjs.com/package/js-polyfills) 
 
+
+
+* 읽어보기 : includes\(\) vs indexOf\(\) [https://dev.to/adroitcoder/includes-vs-indexof-in-javascript](https://dev.to/adroitcoder/includes-vs-indexof-in-javascript) 
+
