@@ -23,5 +23,5 @@ JavaScript 간단 문법 : [https://www.w3schools.com/js/default.asp](https://ww
 
 프로그래머스\_자바스크립트와 웹 프론트엔드 :  [https://programmers.co.kr/learn/courses/10](https://programmers.co.kr/learn/courses/10)   
   
-팁! 좀 더 문법에 익숙해졌다면. MDN [https://developer.mozilla.org/ko/docs/Web/JavaScript](https://developer.mozilla.org/ko/docs/Web/JavaScript)
+팁! 좀 더 문법에 익숙해졌다면. MDN에 기초, 중급, 고급 등 아주 좋은 내용이 많습니다!  [https://developer.mozilla.org/ko/docs/Web/JavaScript](https://developer.mozilla.org/ko/docs/Web/JavaScript)
 
