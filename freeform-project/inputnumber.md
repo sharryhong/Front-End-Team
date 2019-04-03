@@ -56,3 +56,21 @@ var key = e.keyCode || e.which;
 if(key === 8) return; 
 ```
 
+
+
+#### input요소에 value값 set, get하는 방법
+
+#### document.getElementById 와 그 외 돔 선택할 수 있는 방법, 장단점
+
+#### parseInt\(\)  [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global\_Objects/parseInt](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
+
+#### data type 체크해보기
+
+#### 이벤트
+
+#### function
+
+
+
+
+
