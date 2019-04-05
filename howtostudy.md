@@ -19,6 +19,8 @@ description: 다른 프로그래머들이 추천해준 방법
 \(소니아가 알려준\) JavaScript 문법 간단 실습 : [https://www.w3schools.com/js/exercise\_js.asp?filename=exercise\_js\_variables1](https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1)  
 JavaScript 간단 문법 : [https://www.w3schools.com/js/default.asp](https://www.w3schools.com/js/default.asp) 
 
+\(여니가 알려준\) 웹 html, css, js등 튜토리얼   [https://poiemaweb.com/](https://poiemaweb.com/)  
+
 프로그래머스\_Hello, JavaScript! : 실습만 해도 좋을 곳 [https://programmers.co.kr/learn/courses/3](https://programmers.co.kr/learn/courses/3) 
 
 프로그래머스\_자바스크립트와 웹 프론트엔드 :  [https://programmers.co.kr/learn/courses/10](https://programmers.co.kr/learn/courses/10)   
