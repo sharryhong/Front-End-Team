@@ -21,6 +21,8 @@
 
 * [countDown](tutorial/countdown.md)
 * [dynamicTab1](tutorial/dynamictab1.md)
+* [test](tutorial/test.md)
+
 
 ## member's
 
