@@ -20,7 +20,7 @@
 ## Tutorial
 
 * [countDown](tutorial/countdown.md)
-* [dynamicTab](tutorial/dynamictab.md)
+* [dynamicTab1](tutorial/dynamictab1.md)
 
 ## member's
 
@@ -31,3 +31,4 @@
 * [Sharry](members/sharry.md)
 * [Sonia](members/sonia.md)
 * [Yeony](members/yeony.md)
+
