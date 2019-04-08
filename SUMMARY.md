@@ -20,7 +20,7 @@
 ## Tutorial
 
 * [countDown](tutorial/countdown.md)
-* [dynamicTab](tutorial/dynamic-tab.md)
+* [dynamicTab](tutorial/dynamictab.md)
 
 ## member's
 
