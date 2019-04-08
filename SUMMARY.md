@@ -20,7 +20,8 @@
 ## Tutorial
 
 * [countDown](tutorial/countdown.md)
-* [dynamicTab1](tutorial/dynamictab1.md)
+* [dynamictab](tutorial/dynamictab.md)
+* [dynamictab1](tutorial/dynamictab1.md)
 * [test](tutorial/test.md)
 
 
