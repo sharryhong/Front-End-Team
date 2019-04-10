@@ -1,7 +1,9 @@
 # JS Study
 
 > 아래 사이트 \(여니 추천\) 튜토리얼을 순서를 재정리해보았습니다. a -&gt; b -&gt; c ...   
-> 반드시 순서대로 볼 필요는 없습니다. :\)
+> 반드시 순서대로 볼 필요는 없습니다. :\)   
+> 바빠서 실습을 못했을 경우는 아래 순서대로 진행하고,   
+> 실습의 단계별 코딩 -&gt; 스터디시 아래 개념 함께 보기 -&gt; 코드 리펙토링 -&gt; 다음단계 진행하는 식이면 좋을 것 같아요
 
 {% embed url="https://poiemaweb.com/" %}
 
@@ -39,7 +41,8 @@
 
 [_13_ 타입 체크](https://poiemaweb.com/js-type-check) \(b\)
 
-[_21_ 빌트인 객체](https://poiemaweb.com/js-built-in-object) \(b\)
+[_21_ 빌트인 객체](https://poiemaweb.com/js-built-in-object) \(b\)  
+     : 관련 MDN  [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global\_Objects](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects) 
 
 [_22_ 전역 객체](https://poiemaweb.com/js-global-object) \(b\)
 
