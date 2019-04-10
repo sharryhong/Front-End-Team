@@ -4,6 +4,7 @@
 * [How to Study](howtostudy.md)
 * [JavaScript and JavaScript Engine](javascript-javascript-engine.md)
 * [JavaScript?](javascript.md)
+* [JS Study](js-study.md)
 
 ## JavaScript lexical grammar
 
@@ -20,10 +21,7 @@
 ## Tutorial
 
 * [countDown](tutorial/countdown.md)
-* [dynamictab](tutorial/dynamictab.md)
-* [dynamictab1](tutorial/dynamictab1.md)
-* [test](tutorial/test.md)
-
+* [dynamicTab1](tutorial/dynamictab1.md)
 
 ## member's
 
