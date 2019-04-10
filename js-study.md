@@ -41,10 +41,40 @@
 
 [_13_ 타입 체크](https://poiemaweb.com/js-type-check) \(b\)
 
-[_21_ 빌트인 객체](https://poiemaweb.com/js-built-in-object) \(b\)  
+[_16_ 보다 안정적인 자바스크립트 개발 환경을 위한 Strict mode](https://poiemaweb.com/js-strict-mode) \(b\)
+
+[_21_ 빌트인 객체](https://poiemaweb.com/js-built-in-object) \(c\)  
      : 관련 MDN  [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global\_Objects](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects) 
 
-[_22_ 전역 객체](https://poiemaweb.com/js-global-object) \(b\)
+[_22_ 전역 객체](https://poiemaweb.com/js-global-object) \(c\)
+
+
+
+### DOM & Event 
+
+[_30_ 문서 객체 모델\(Document Object Model\)](https://poiemaweb.com/js-dom) \(c\)
+
+[_32_ 이벤트](https://poiemaweb.com/js-event) \(c\)
+
+[_33_ 디바이스의 방향 정보를 다루는 자바스크립트 이벤트](https://poiemaweb.com/js-event-device-orientation) \(c\)
+
+
+
+### 표준 내장 객체    
+
+[_23_ Number 레퍼 객체](https://poiemaweb.com/js-number) \(d\)
+
+[_24_ 수학 상수와 함수를 위한 Math 객체](https://poiemaweb.com/js-math) \(d\)
+
+[_25_ 날짜와 시간을 위한 Date 객체](https://poiemaweb.com/js-date) \(d\)
+
+[_26_ String 레퍼 객체](https://poiemaweb.com/js-string) \(d\)
+
+[_27_ 정규표현식](https://poiemaweb.com/js-regexp) \(d\)
+
+[_28_ 배열](https://poiemaweb.com/js-array) \(d\)
+
+[_29_ 고차 함수](https://poiemaweb.com/js-array-higher-order-function) \(d\) 
 
 
 
@@ -54,8 +84,6 @@
 
 [_15_ 스코프](https://poiemaweb.com/js-scope) \(e\)
 
-[_16_ 보다 안정적인 자바스크립트 개발 환경을 위한 Strict mode](https://poiemaweb.com/js-strict-mode) \(a\)
-
 [_17_ 함수 호출 방식에 의해 결정되는 this](https://poiemaweb.com/js-this) \(e\)
 
 [_18_ 실행 컨텍스트와 자바스크립트의 동작 원리](https://poiemaweb.com/js-execution-context) \(e\)
@@ -63,34 +91,6 @@
 [_19_ 클로저](https://poiemaweb.com/js-closure) \(e\)
 
 [_20_ 자바스크립트 객체지향 프로그래밍](https://poiemaweb.com/js-object-oriented-programming) \(e\)
-
-
-
-### 표준 내장 객체    
-
-[_23_ Number 레퍼 객체](https://poiemaweb.com/js-number) \(c\)
-
-[_24_ 수학 상수와 함수를 위한 Math 객체](https://poiemaweb.com/js-math) \(c\)
-
-[_25_ 날짜와 시간을 위한 Date 객체](https://poiemaweb.com/js-date) \(c\)
-
-[_26_ String 레퍼 객체](https://poiemaweb.com/js-string) \(c\)
-
-[_27_ 정규표현식](https://poiemaweb.com/js-regexp) \(c\)
-
-[_28_ 배열](https://poiemaweb.com/js-array) \(c\)
-
-[_29_ 고차 함수](https://poiemaweb.com/js-array-higher-order-function) \(d\) 
-
-
-
-### DOM 조 & Event 
-
-[_30_ 문서 객체 모델\(Document Object Model\)](https://poiemaweb.com/js-dom) \(d\)
-
-[_32_ 이벤트](https://poiemaweb.com/js-event) \(d\)
-
-[_33_ 디바이스의 방향 정보를 다루는 자바스크립트 이벤트](https://poiemaweb.com/js-event-device-orientation) \(d\)
 
 
 
