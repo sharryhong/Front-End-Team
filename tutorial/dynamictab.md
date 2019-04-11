@@ -101,4 +101,4 @@ element.addEventListener('click', onTabClick, false);
 ```
 
 ## 코드 출처 
-- https://web-crunch.com/how-to-create-tabs-with-vanilla-javascript/]
+- https://web-crunch.com/how-to-create-tabs-with-vanilla-javascript/
