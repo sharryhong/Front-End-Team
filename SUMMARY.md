@@ -15,7 +15,7 @@
 * [Array](javascript-lexical-grammar/array.md)
 * [할당 연산자의 축약](javascript-lexical-grammar/short-assignoperator.md)
 * [이벤트](javascript-lexical-grammar/event.md)
-
+* [if문 예쁘게 짜기](javascript-lexical-grammar//prettyif.md)
 
 ## freeform project
 
