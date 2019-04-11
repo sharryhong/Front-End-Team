@@ -4,6 +4,7 @@
 * [How to Study](howtostudy.md)
 * [JavaScript and JavaScript Engine](javascript-javascript-engine.md)
 * [JavaScript?](javascript.md)
+* [JS Study](js-study.md)
 
 ## JavaScript lexical grammar
 
