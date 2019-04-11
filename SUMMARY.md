@@ -9,7 +9,7 @@
 ## JavaScript lexical grammar
 
 * [Variable](javascript-lexical-grammar/variable.md)
-* [조건문](javascript-lexical-grammar/condition.md)
+* [제어문](javascript-lexical-grammar/condition.md)
 * [Operator](javascript-lexical-grammar/operator.md)
 * [Type Casting \(type conversion\)](javascript-lexical-grammar/type-casting-type-conversion.md)
 * [Array](javascript-lexical-grammar/array.md)
