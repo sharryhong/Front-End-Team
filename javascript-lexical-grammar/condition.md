@@ -158,10 +158,13 @@ var signalColor="yellow";
 switch(signalColor) {
     case "yellow" :
         alert("서행하세요.");
+        break;
     case "red" :
         alert("멈추세요.");
+        break;
     default :
         alert("달리세요.");
+        break;
 }
 
 var signalColor=window.prompt("신호등 코드를 입력하세요. \n 1 : yellow \n 2 : red \n 3 : green");
@@ -245,7 +248,7 @@ quiz4. 코드로만 봤을 때 위의 코드를 실행하면?
 
 quiz5. 이를 해결하기 위해서는?
 
-![](KakaoTalk_Photo_2018-10-28-14-11-55-c7386a6e-e2b2-44cf-a099-dcc0bcd5db42.jpeg)
+![](../.gitbook/assets/KakaoTalk_Photo_2018-10-28-14-11-55-c7386a6e-e2b2-44cf-a099-dcc0bcd5db42.jpeg)
 
  while와 마찬가지로 반복을 수행하는 제어문.
 
