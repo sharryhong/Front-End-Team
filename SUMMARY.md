@@ -14,6 +14,8 @@
 * [Type Casting \(type conversion\)](javascript-lexical-grammar/type-casting-type-conversion.md)
 * [Array](javascript-lexical-grammar/array.md)
 * [할당 연산자의 축약](javascript-lexical-grammar/short-assignoperator.md)
+* [이벤트](javascript-lexical-grammar/event.md)
+
 
 ## freeform project
 
