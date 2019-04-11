@@ -4,6 +4,7 @@
 작성자 : 스칼렛
 
 --
+
 1. 홀수 번째에 있는 배열의 값의 합 구하기
 ```javascript
     var arrayOfIntegers = [1, 4, 5, 9, 0, -1, 5];
