@@ -2,10 +2,11 @@
 description: '작성자 : 스칼렛'
 ---
 
-# dynamicTab1
+# dynamicTab
 
 ## 코드
-```html
+
+```markup
   <div class="container">
   <!-- Tabs -->
   <ul id="nav-tab" class="nav">
@@ -34,6 +35,7 @@ description: '작성자 : 스칼렛'
   </div>
 </div>
 ```
+
 ```css
 body {
  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -48,10 +50,10 @@ body {
 ul {
   list-style: none;
   padding: 0;
-  
+
   li {
     display: inline-flex;
-    
+
     a {
       text-decoration: none;
       color: darkgray;
@@ -83,14 +85,15 @@ ul {
   display: block; 
 }
 ```
-```js
+
+```javascript
 function onTabClick(event) {
   var activeTabs = document.querySelectorAll('.active');
-  
+
   activeTabs.forEach(function(tab) {
     tab.className = tab.className.replace('active', '');
   });
-  
+
   event.target.parentElement.className += ' active';
   document.getElementById(event.target.href.split('#')[1]).className += ' active';
 }
@@ -100,5 +103,7 @@ var element = document.getElementById('nav-tab');
 element.addEventListener('click', onTabClick, false);
 ```
 
-## 코드 출처 
-- https://web-crunch.com/how-to-create-tabs-with-vanilla-javascript/
+## 코드 출처
+
+* [https://web-crunch.com/how-to-create-tabs-with-vanilla-javascript/](https://web-crunch.com/how-to-create-tabs-with-vanilla-javascript/)
+
