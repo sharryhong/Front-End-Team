@@ -60,6 +60,22 @@
 
 
 
+### 자바스크립트의 특징 
+
+[_14_ 프로토타입](https://poiemaweb.com/js-prototype) \(e\)
+
+[_15_ 스코프](https://poiemaweb.com/js-scope) \(b\) // 즉시실행함수 
+
+[_17_ 함수 호출 방식에 의해 결정되는 this](https://poiemaweb.com/js-this) \(b\)
+
+[_18_ 실행 컨텍스트와 자바스크립트의 동작 원리](https://poiemaweb.com/js-execution-context) \(e\)
+
+[_19_ 클로저](https://poiemaweb.com/js-closure) \(e\)
+
+[_20_ 자바스크립트 객체지향 프로그래밍](https://poiemaweb.com/js-object-oriented-programming) \(e\)
+
+
+
 ### 표준 내장 객체    
 
 [_23_ Number 레퍼 객체](https://poiemaweb.com/js-number) \(d\)
@@ -75,22 +91,6 @@
 [_28_ 배열](https://poiemaweb.com/js-array) \(d\)
 
 [_29_ 고차 함수](https://poiemaweb.com/js-array-higher-order-function) \(d\) 
-
-
-
-### 자바스크립트의 특징 
-
-[_14_ 프로토타입](https://poiemaweb.com/js-prototype) \(e\)
-
-[_15_ 스코프](https://poiemaweb.com/js-scope) \(b\) // 즉시실행함수 
-
-[_17_ 함수 호출 방식에 의해 결정되는 this](https://poiemaweb.com/js-this) \(b\)
-
-[_18_ 실행 컨텍스트와 자바스크립트의 동작 원리](https://poiemaweb.com/js-execution-context) \(e\)
-
-[_19_ 클로저](https://poiemaweb.com/js-closure) \(e\)
-
-[_20_ 자바스크립트 객체지향 프로그래밍](https://poiemaweb.com/js-object-oriented-programming) \(e\)
 
 
 
