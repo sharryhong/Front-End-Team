@@ -7,9 +7,9 @@
 
 {% embed url="https://poiemaweb.com/" %}
 
-### 기본 개념  
+### 기본 개념 ! 
 
-[_1_ 프로그래밍이란?](https://poiemaweb.com/coding) \(a\)
+[_1_ 프로그래밍이란?](https://poiemaweb.com/coding) \(a\) 
 
 [_2_ 자바스크립트란?](https://poiemaweb.com/js-introduction) \(a\)
 
@@ -188,6 +188,10 @@
 #### 실습 
 
 * 실제 백엔드 api 연동하여 구현해보며 나오는 이슈들을 접하고 해결해본다. 
+
+## 스터디 ! 
+
+* 열심히 
 
 
 
