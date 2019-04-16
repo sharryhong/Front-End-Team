@@ -82,7 +82,7 @@
 
 [_14_ 프로토타입](https://poiemaweb.com/js-prototype) \(e\)
 
-[_15_ 스코프](https://poiemaweb.com/js-scope) \(e\)
+[_15_ 스코프](https://poiemaweb.com/js-scope) \(b\) // 즉시실행함수 
 
 [_17_ 함수 호출 방식에 의해 결정되는 this](https://poiemaweb.com/js-this) \(e\)
 
