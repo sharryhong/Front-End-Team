@@ -1,6 +1,8 @@
 # Bean
 
-## 깃헙 : [https://github.com/lhyekwang](https://github.com/lhyekwang)
+### 깃북 : [https://bean-1.gitbook.io/workspace/](https://bean-1.gitbook.io/workspace/)
+
+### 깃헙 : [https://github.com/lhyekwang](https://github.com/lhyekwang)
 
 ## 1차
 
