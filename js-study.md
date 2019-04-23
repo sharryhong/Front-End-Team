@@ -191,5 +191,36 @@
 
 
 
+## 스터디 진행 정리  
+
+#### 1주차 - 4월 3째주 \(4/15~19\) 
+
+[1 프로그래밍이란?](https://poiemaweb.com/coding) \(a\) 
+
+* inputNumber 1단계를 예로 들어 프로그래밍적 사고를 해보자. 
+* 프로그래밍 순서도 
+
+[2 자바스크립트란?](https://poiemaweb.com/js-introduction) \(a\)
+
+* 자바스크립트의 역사
+* AJAX의 등장
+* SPA
+* 자바스크립트 언어의 특징
+* ES5, 6
+
+[3 자바스크립트 개발 환경과 실행 방법](https://poiemaweb.com/js-hello-world) \(a\)
+
+* 개발자 도구
+* Node.js, npm, liveServer 간단소
+
+[4 브라우저 동작 원리](https://poiemaweb.com/js-browser) \(a\) 
+
+* 브라우저 동작원리와 script 태그 위치 
+
+그 외 
+
+* Webpack : [https://medium.com/@OutOfBedlam/webpack-%EC%86%8C%EA%B0%9C-d595f93d5c28](https://medium.com/@OutOfBedlam/webpack-%EC%86%8C%EA%B0%9C-d595f93d5c28) 
+* Gulp, Webpack 차이 : [https://fullest-sway.me/blog/2017/03/29/tool-each/](https://fullest-sway.me/blog/2017/03/29/tool-each/) 
+
 
 
