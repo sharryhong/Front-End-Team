@@ -69,7 +69,7 @@
 
 **quiz2. 여기서 잠시 비교 연산자와 논리 연산자에는 어떤 것이 있었나요?**
 
-![](../.gitbook/assets/kakaotalk_photo_2018-10-28-12-38-43-34a94dd3-6d68-4577-909c-570c42480881.jpeg)
+![](../../.gitbook/assets/kakaotalk_photo_2018-10-28-12-38-43-34a94dd3-6d68-4577-909c-570c42480881.jpeg)
 
 만일 ~ 라면에 해당하는 구문.
 
@@ -82,7 +82,7 @@ if(isDoneWork) { // isDoneWork이 true인 경우
 }
 ```
 
-![](../.gitbook/assets/kakaotalk_photo_2018-10-28-12-37-26-13aa0442-9f98-4b3e-a2f3-989be38b98ac.jpeg)
+![](../../.gitbook/assets/kakaotalk_photo_2018-10-28-12-37-26-13aa0442-9f98-4b3e-a2f3-989be38b98ac.jpeg)
 
 '만일 ~ 이면 처리1을 하고 그렇지 않으면 처리2를 함'
 
@@ -112,7 +112,7 @@ var sendToBoss = function (msg) {
 if (isDoneWork) alert("칼퇴"); else alert("슬프지만...야근이네요");
 ```
 
-![](../.gitbook/assets/kakaotalk_photo_2018-10-28-13-04-20-c335503e-ffed-435b-bc29-6c83023f174a.jpeg)
+![](../../.gitbook/assets/kakaotalk_photo_2018-10-28-13-04-20-c335503e-ffed-435b-bc29-6c83023f174a.jpeg)
 
 '만일 ~ 라면, 아니면 ~ 라면, 아니면 ~ 라면, ..., 모두 아니라면' 이 조건문 중 실행되는 건 하나이다.
 
@@ -124,7 +124,7 @@ if문을 비롯한 제어문에서는 처리 안에 제어문을 포함시킬 �
 
 이렇게 포함되는 제어문을 '네스트\(nest\)'라고 함.
 
-![](../.gitbook/assets/kakaotalk_photo_2018-10-28-13-20-26-cee50ceb-0bf6-405e-8b34-e14452332998.jpeg)
+![](../../.gitbook/assets/kakaotalk_photo_2018-10-28-13-20-26-cee50ceb-0bf6-405e-8b34-e14452332998.jpeg)
 
 ```javascript
 var inpNameValue="guest";
@@ -158,7 +158,7 @@ if(inpNameValue && inpPasswordValue)
 
 각 선택 사항의 맨 뒤에는 break문을 기술하여 선택한 처리만 수행하도록 함.
 
-![](../.gitbook/assets/kakaotalk_photo_2018-10-28-13-42-55-52c7e658-259e-41b7-bbae-9e1809092ac4.jpeg)
+![](../../.gitbook/assets/kakaotalk_photo_2018-10-28-13-42-55-52c7e658-259e-41b7-bbae-9e1809092ac4.jpeg)
 
 \*\* break가 없으면 그냥 통과해서 모두 처리함!!
 
@@ -213,7 +213,7 @@ switch(signalColor) {
 
 * for문 쉽게 이해하기.pdf
 
-![](../.gitbook/assets/2018-10-282-4b2a68fc-816a-496b-9396-33670653c96f.16.00.png)
+![](../../.gitbook/assets/2018-10-282-4b2a68fc-816a-496b-9396-33670653c96f.16.00.png)
 
 * 자바스크립트에서  for문의 종류는 for ... in, for ... of, forEach ... 등등 이 있음.
 
@@ -230,15 +230,15 @@ for(var j=1;j<=9;j++) {
 }
 ```
 
-![](../.gitbook/assets/2018-10-282-1bcaddca-bcef-4039-8bc4-2f6bc300a845.13.47.png)
+![](../../.gitbook/assets/2018-10-282-1bcaddca-bcef-4039-8bc4-2f6bc300a845.13.47.png)
 
 ### while 문
 
 어떤 조건이 성립하는 동안만 반복 처리를 실행하는 제어문. 카운터에 해당하는 것이 없고 주로 반복할 횟수를 모를 때 사용함.
 
-![](../.gitbook/assets/kakaotalk_photo_2018-10-28-14-11-54-6a03f845-494b-4e81-af39-9b9b378407c0.jpeg)
+![](../../.gitbook/assets/kakaotalk_photo_2018-10-28-14-11-54-6a03f845-494b-4e81-af39-9b9b378407c0.jpeg)
 
-![](../.gitbook/assets/2018-10-282-52fe6c4a-178b-40e7-99c9-7a84e0fac14a.14.46.png)
+![](../../.gitbook/assets/2018-10-282-52fe6c4a-178b-40e7-99c9-7a84e0fac14a.14.46.png)
 
 quiz3. 여기서 for문과 while의 차이점은?
 
@@ -250,7 +250,7 @@ quiz3. 여기서 for문과 while의 차이점은?
 
 이는 버그의 오류의 원인이 됨.
 
-![](../.gitbook/assets/2018-10-282-9e90c2e0-5c42-49dd-a9e5-a410cf2b26f3.19.35.png)
+![](../../.gitbook/assets/2018-10-282-9e90c2e0-5c42-49dd-a9e5-a410cf2b26f3.19.35.png)
 
 ```javascript
 var i=0;
@@ -264,7 +264,7 @@ quiz4. 코드로만 봤을 때 위의 코드를 실행하면?
 
 quiz5. 이를 해결하기 위해서는?
 
-![](../.gitbook/assets/kakaotalk_photo_2018-10-28-14-11-55-c7386a6e-e2b2-44cf-a099-dcc0bcd5db42.jpeg)
+![](../../.gitbook/assets/kakaotalk_photo_2018-10-28-14-11-55-c7386a6e-e2b2-44cf-a099-dcc0bcd5db42.jpeg)
 
 while와 마찬가지로 반복을 수행하는 제어문.
 

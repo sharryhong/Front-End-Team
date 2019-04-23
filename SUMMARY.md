@@ -5,19 +5,19 @@
 * [JavaScript and JavaScript Engine](javascript-javascript-engine.md)
 * [JavaScript?](javascript.md)
 * [JS Study](js-study.md)
-* [test](test.md)
 
 ## JavaScript lexical grammar
 
-* [Variable](javascript-lexical-grammar/variable.md)
-* [제어문](javascript-lexical-grammar/condition.md)
-* [Operator](javascript-lexical-grammar/operator.md)
-* [Type Casting \(type conversion\)](javascript-lexical-grammar/type-casting-type-conversion.md)
-* [Array](javascript-lexical-grammar/array.md)
-* [할당 연산자의 축약](javascript-lexical-grammar/short-assignoperator.md)
-* [이벤트](javascript-lexical-grammar/event.md)
-* [if문 예쁘게 짜기](javascript-lexical-grammar/prettyif.md)
-* [Function](javascript-lexical-grammar/function.md)
+* [JAVASCRIPT LEXICAL GRAMMAR](javascript-lexical-grammar/javascript-lexical-grammar/README.md)
+  * [Variable](javascript-lexical-grammar/javascript-lexical-grammar/variable.md)
+  * [Operator](javascript-lexical-grammar/javascript-lexical-grammar/operator.md)
+  * [제어문](javascript-lexical-grammar/javascript-lexical-grammar/condition.md)
+  * [Type Casting \(type conversion\)](javascript-lexical-grammar/javascript-lexical-grammar/type-casting-type-conversion.md)
+  * [Array](javascript-lexical-grammar/javascript-lexical-grammar/array.md)
+  * [할당 연산자의 축약](javascript-lexical-grammar/javascript-lexical-grammar/short-assignoperator.md)
+  * [이벤트](javascript-lexical-grammar/javascript-lexical-grammar/event.md)
+  * [if문 예쁘게 짜기](javascript-lexical-grammar/javascript-lexical-grammar/prettyif.md)
+  * [Function](javascript-lexical-grammar/javascript-lexical-grammar/function.md)
 
 ## freeform project
 
