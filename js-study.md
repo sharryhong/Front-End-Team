@@ -211,7 +211,7 @@
 [3 자바스크립트 개발 환경과 실행 방법](https://poiemaweb.com/js-hello-world) \(a\)
 
 * 개발자 도구
-* Node.js, npm, liveServer 간단소
+* Node.js, npm, liveServer 간단소개   
 
 [4 브라우저 동작 원리](https://poiemaweb.com/js-browser) \(a\) 
 
