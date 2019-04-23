@@ -5,6 +5,7 @@
 * [JavaScript and JavaScript Engine](javascript-javascript-engine.md)
 * [JavaScript?](javascript.md)
 * [JS Study](js-study.md)
+* [test](test.md)
 
 ## JavaScript lexical grammar
 
