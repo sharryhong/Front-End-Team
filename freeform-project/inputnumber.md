@@ -70,6 +70,13 @@ if(key === 8) return;
 
 #### function
 
+#### this
+
+#### disabled시키는 
+
+* 방법1 [https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/Attribute/disabled](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL/Attribute/disabled) , 
+* 방법2 [https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/disabled](https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/disabled)
+
 
 
 
