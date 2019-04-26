@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <title>count example</title>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="text" id="inputNum" class="inp_txt" placeholder="숫자넣어보아">
+    <button data-type='minus' id="buttonMinus">-</button>
+    <button data-type='plus' id="buttonPlus">+</button>
+    <span class="message" style="color:red"></span>
+    <script>
+    // Bean의 코드 리펙토링
+    // 해보니까 버튼 disabled하는 것과 유효성체크를 따로 하지않고 같이하면 코드가 더 간단할 것 같아서 리펙토링 해봤습니다.
+    // 그래서 유효성 타입체크하는 state 없이도 가능해졌어요. 참고만 해주세요 ^^
+
+        'use strict';
+        var inputNumber = document.getElementById('inputNum');
+        var buttonElement = document.querySelectorAll('button');
+        var guideText = document.querySelector('.message');
+        var buttonMinus = document.getElementById('buttonMinus');
+        var buttonPlus = document.getElementById('buttonPlus');
+        var maxLevel = 5;
+        var minLevel = -5;
+        var result = 1;
+        inputNumber.value = result;
+
+        function onCount(){
+            result = Number(inputNumber.value); // parseInt로했을때와 Number했을때가 다르네요. Number로 해야 형변환이 제대로 되나봅니다. 이건 자료 찾아볼게요~ 
+            var calc = this.getAttribute('data-type');
+            switch (calc)   {
+                case 'minus':
+                    result--;
+                    break;
+                case 'plus' :
+                    result++;
+                    break;
+            }
+            inputNumber.value = result;
+            validateNumber();
+        }
+
+        // 유효성 체크 기능
+        function validateNumber(){
+            result = Number(inputNumber.value);
+            if (result < minLevel) {
+                guideText.innerHTML = minLevel+' 보다작은수는안되어요!';
+                buttonMinus.disabled = true;
+                deleteInputValue();
+            } else if (result > maxLevel) {
+                guideText.innerHTML = maxLevel+'보다큰수는안되어요!';
+                buttonPlus.disabled = true;
+                deleteInputValue();
+            } else if (isNaN(result)) {
+                guideText.innerHTML = ('숫자넣으시옹!');
+                inputNumber.value = '';
+                deleteInputValue();
+            } else {
+                guideText.innerHTML = ('');
+                buttonMinus.disabled = false;
+                buttonPlus.disabled = false;
+            }
+        }
+
+        // input 요소 값 비우고 포커스 주는 기능
+        function deleteInputValue() {
+          inputNumber.focus();
+          return;
+        }
+
+        for(var i = 0; i<buttonElement.length;i++){
+            buttonElement[i].addEventListener('click',onCount);
+        }
+
+        inputNumber.addEventListener('keyup', validateNumber);
+
+
+    </script>
+</body>
+</html>
