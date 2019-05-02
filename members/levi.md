@@ -1,5 +1,7 @@
 # Levi
 
+#### 깃북 : [https://leviseo.gitbook.io/study/](https://leviseo.gitbook.io/study/) 
+
 #### 깃헙 : [https://github.com/leviseo/study ](https://github.com/leviseo/leviseo.github.io) 
 
 #### 1. inputNumber 실습 
