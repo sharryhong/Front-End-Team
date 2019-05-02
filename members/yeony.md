@@ -8,3 +8,9 @@
 
 * 1, 2단계 리뷰 : [https://github.com/yeony1011/2019script\_ex/commit/414444dd514420a9fd90c9707fb4cb87886eb9c3\#comments](https://github.com/yeony1011/2019script_ex/commit/414444dd514420a9fd90c9707fb4cb87886eb9c3#comments)
 
+### 1. inputNumber 실습 5단계 : 
+
+* [결과화면 보기](https://yeony1011.github.io/2019script_ex/190325/190325_v2.html)
+* [해당 소스 보기](https://github.com/yeony1011/2019script_ex/blob/master/190325/common_v2.js)
+* 5단계 리뷰 : [https://github.com/yeony1011/2019script\_ex/issues/3](https://github.com/yeony1011/2019script_ex/issues/3) 
+

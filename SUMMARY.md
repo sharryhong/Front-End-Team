@@ -23,7 +23,7 @@
 
 * [inputNumber](freeform-project/inputnumber.md)
 * [Modal \(layer popup\)](freeform-project/modal-layer-popup.md)
-* [formVaildation](freeform-project/formVaildation.md)
+* [formVaildation](freeform-project/formvaildation.md)
 
 ## Tutorial
 
