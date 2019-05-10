@@ -8,6 +8,7 @@
 
 * 결과화면 : [https://selenek.github.io/study//freeform-project/inputnumber.html](https://selenek.github.io/study//freeform-project/inputnumber.html)
 * 코드 : [https://github.com/seleneK/study/blob/master/freeform-project/inputnumber.html](https://github.com/seleneK/study/blob/master/freeform-project/inputnumber.html) 
+* 1단계 코드 리뷰 : [https://github.com/seleneK/study/issues/1](https://github.com/seleneK/study/issues/1) 
 
 
 
