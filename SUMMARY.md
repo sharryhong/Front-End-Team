@@ -23,11 +23,14 @@
 
 * [inputNumber](freeform-project/inputnumber.md)
 * [Modal \(layer popup\)](freeform-project/modal-layer-popup.md)
+* [formVaildation](freeform-project/formvaildation.md)
+* [Select](freeform-project/select.md)
 
 ## Tutorial
 
 * [countDown](tutorial/countdown.md)
 * [dynamicTab](tutorial/dynamictab.md)
+* [flexPannelGallery](tutorial/flexpannelgallery.md)
 
 ## member's
 
