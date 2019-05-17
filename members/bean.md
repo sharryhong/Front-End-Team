@@ -13,3 +13,7 @@
   * 2차 : [https://github.com/lhyekwang/source/commit/1e726463d51d0efac68be809889945433c6c2e63](https://github.com/lhyekwang/source/commit/1e726463d51d0efac68be809889945433c6c2e63)  
   * 3차 : [https://github.com/lhyekwang/source/blob/695fcf56b33ec48bf60bbe79ab58c3a420096db3/study/01\_button.html](https://github.com/lhyekwang/source/blob/695fcf56b33ec48bf60bbe79ab58c3a420096db3/study/01_button.html)
 
+
+## 2차
+* PAGES : [https://lhyekwang.github.io/source/study/02_modal.html](https://lhyekwang.github.io/source/study/02_modal.html)
+* CODE : [https://github.com/lhyekwang/source/blob/master/study/02_modal.html](https://github.com/lhyekwang/source/blob/master/study/02_modal.html)
