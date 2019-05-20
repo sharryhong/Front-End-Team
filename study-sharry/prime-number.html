@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>소수</title>
+    <style>
+    .input_num {
+      border: 1px solid #bbb;
+      border-radius: 5px;
+      padding: 7px;
+      font-size: 14px;
+    }
+    .btn_submit {
+      width: 56px;
+      height: 30px;
+      margin-left: 5px;
+      border: 1px solid #bbb;
+      border-radius: 32px;
+      font-size: 12px;
+      line-height: 28px;
+    }
+    .txt_result {
+      font-size: 15px;
+      font-weight: bold;
+      color: red;
+    }
+    </style>
+</head>
+<body>
+  <h2>숫자가 <a href="https://ko.wikipedia.org/wiki/%EC%86%8C%EC%88%98_(%EC%88%98%EB%A1%A0)" target="_blank">소수</a>인지 판별하기</h2>
+  <input type="text" value="" class="input_num" placeholder="숫자입력">
+  <button type="button" class="btn_submit">확인</button>
+  <p class="txt_result"></p>
+<script>
+  (function() {
+    'use strict';
+
+    let inputNumEl = document.querySelector('.input_num');
+    let btnSubmit = document.querySelector('.btn_submit');
+    let txtResult = document.querySelector('.txt_result');
+
+    function resetInput() {
+      inputNumEl.value = '';
+      inputNumEl.focus();
+    }
+
+    function showTxt(el, message, inputNum) {
+      if (!inputNum) el.innerHTML = message;
+      else el.innerHTML = `${inputNum} : ${message}`;
+      resetInput();
+    }
+
+    function checkPrimeNumber() {
+      let inputNum = inputNumEl.value;
+      showTxt(txtResult, '');
+      if (!inputNum) {
+        showTxt(txtResult, '숫자를 입력해주세요');
+        inputNumEl.focus();
+      } else {
+        if (inputNum === '1') return showTxt(txtResult, '소수입니다', inputNum);
+        if (inputNum === '2') return showTxt(txtResult, '소수가 아닙니다', inputNum);
+        else {
+          for(let i = 2; i < inputNum; i++) {
+            if(inputNum % i === 0) {
+              resetInput();
+              return showTxt(txtResult, '소수가 아닙니다', inputNum);
+            }
+          }
+          showTxt(txtResult, '소수입니다', inputNum);
+        }
+      }
+    }
+
+    btnSubmit.addEventListener('click', checkPrimeNumber);
+    inputNumEl.addEventListener('keyup', (e) => {
+      if (e.keyCode === 13) checkPrimeNumber();
+    });
+
+  })();
+</script>
+</body>
+</html>
