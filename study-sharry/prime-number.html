@@ -53,14 +53,12 @@
     }
 
     function checkPrimeNumber() {
-      let inputNum = inputNumEl.value;
+      let inputNum = Number(inputNumEl.value);
       showTxt(txtResult, '');
-      if (!inputNum) {
-        showTxt(txtResult, '숫자를 입력해주세요');
-        inputNumEl.focus();
-      } else {
-        if (inputNum === '1') return showTxt(txtResult, '소수입니다', inputNum);
-        if (inputNum === '2') return showTxt(txtResult, '소수가 아닙니다', inputNum);
+      if (!inputNum || isNaN(inputNum)) showTxt(txtResult, '숫자를 입력해주세요');
+      else {
+        if (inputNum === 1) return showTxt(txtResult, '소수입니다', inputNum);
+        if (inputNum === 2) return showTxt(txtResult, '소수가 아닙니다', inputNum);
         else {
           for(let i = 2; i < inputNum; i++) {
             if(inputNum % i === 0) {
