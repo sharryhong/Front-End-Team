@@ -42,4 +42,5 @@
 * [Sharry](members/sharry.md)
 * [Sonia](members/sonia.md)
 * [Yeony](members/yeony.md)
+* [Soo](members/soo.md)
 

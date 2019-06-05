@@ -18,3 +18,8 @@
 * PAGES : [https://lhyekwang.github.io/source/study/02\_modal.html](https://lhyekwang.github.io/source/study/02_modal.html)
 * CODE : [https://github.com/lhyekwang/source/blob/master/study/02\_modal.html](https://github.com/lhyekwang/source/blob/master/study/02_modal.html)
 
+## 스터디콥 과제1. 입력한 문자열의 길이를 알려주는 프로그램 작성 
+
+* PAGES : 
+* CODE : [https://github.com/lhyekwang/source/blob/2%EB%B2%88/study/03\_cop.html](https://github.com/lhyekwang/source/blob/2%EB%B2%88/study/03_cop.html)
+
