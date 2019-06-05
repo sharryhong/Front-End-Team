@@ -12,13 +12,13 @@
 
 * [결과화면 보기](https://yeony1011.github.io/2019script_ex/190325/190325_v2.html)
 * [해당 소스 보기](https://github.com/yeony1011/2019script_ex/blob/master/190325/common_v2.js)
-* 5단계 리뷰 : [https://github.com/yeony1011/2019script\_ex/issues/3](https://github.com/yeony1011/2019script_ex/issues/3) 
+* 5단계 코드 리뷰 : [https://github.com/yeony1011/2019script\_ex/issues/3](https://github.com/yeony1011/2019script_ex/issues/3) 
 * 코드 리펙토링 : [https://yeony.gitbook.io/fe-study/190325](https://yeony.gitbook.io/fe-study/190325) 
 
 #### 2. modal 실습 
 
 * [https://yeony.gitbook.io/fe-study/modal](https://yeony.gitbook.io/fe-study/modal) 
-* 코드리뷰: [https://github.com/yeony1011/2019script\_ex/issues/3](https://github.com/yeony1011/2019script_ex/issues/3) 
+* 코드 리뷰: [https://github.com/yeony1011/2019script\_ex/issues/3](https://github.com/yeony1011/2019script_ex/issues/3) 
 
 #### 3. 디자인된 셀렉트박스 기능 
 
