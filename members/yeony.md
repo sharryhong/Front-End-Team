@@ -18,6 +18,7 @@
 #### 2. modal 실습 
 
 * [https://yeony.gitbook.io/fe-study/modal](https://yeony.gitbook.io/fe-study/modal) 
+* 코드리뷰: [https://github.com/yeony1011/2019script\_ex/issues/3](https://github.com/yeony1011/2019script_ex/issues/3) 
 
 #### 3. 디자인된 셀렉트박스 기능 
 
