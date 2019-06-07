@@ -8,5 +8,9 @@
 
 * 1단계 리뷰 : [https://github.com/leviseo/leviseo.github.io/commit/8ef45081b794be778b45ff239888b3fde8adb0ee\#comments](https://github.com/leviseo/leviseo.github.io/commit/8ef45081b794be778b45ff239888b3fde8adb0ee#comments) 
 
+## 과제1. 
 
+PAGES: [https://leviseo.github.io/study/operator/](https://leviseo.github.io/study/operator/)
+
+CODE: [https://github.com/leviseo/leviseo.github.io/blob/master/study/operator/index.html](https://github.com/leviseo/leviseo.github.io/blob/master/study/operator/index.html)
 
