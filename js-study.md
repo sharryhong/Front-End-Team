@@ -5,11 +5,11 @@
 > 바빠서 실습을 못했을 경우는 아래 순서대로 진행하고,   
 > 실습의 단계별 코딩 -&gt; 스터디시 아래 개념 함께 보기 -&gt; 코드 리펙토링 -&gt; 다음단계 진행하는 식이면 좋을 것 같아요.
 
-{% embed url="https://poiemaweb.com/" %}
+https://poiemaweb.com/
 
-### 기본 개념 ! 
+### 기본 개념 !
 
-[_1_ 프로그래밍이란?](https://poiemaweb.com/coding) \(a\) 
+[_1_ 프로그래밍이란?](https://poiemaweb.com/coding) \(a\)
 
 [_2_ 자바스크립트란?](https://poiemaweb.com/js-introduction) \(a\)
 
@@ -44,13 +44,13 @@
 [_16_ 보다 안정적인 자바스크립트 개발 환경을 위한 Strict mode](https://poiemaweb.com/js-strict-mode) \(b\)
 
 [_21_ 빌트인 객체](https://poiemaweb.com/js-built-in-object) \(c\)  
-     : 관련 MDN  [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global\_Objects](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects) 
+     : 관련 MDN  [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global\_Objects](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects)
 
 [_22_ 전역 객체](https://poiemaweb.com/js-global-object) \(c\)
 
 
 
-### DOM & Event 
+### DOM & Event
 
 [_30_ 문서 객체 모델\(Document Object Model\)](https://poiemaweb.com/js-dom) \(c\)
 
@@ -60,11 +60,11 @@
 
 
 
-### 자바스크립트의 특징 
+### 자바스크립트의 특징
 
 [_14_ 프로토타입](https://poiemaweb.com/js-prototype) \(e\)
 
-[_15_ 스코프](https://poiemaweb.com/js-scope) \(b\) // 즉시실행함수 
+[_15_ 스코프](https://poiemaweb.com/js-scope) \(b\) // 즉시실행함수
 
 [_17_ 함수 호출 방식에 의해 결정되는 this](https://poiemaweb.com/js-this) \(b\)
 
@@ -90,7 +90,7 @@
 
 [_28_ 배열](https://poiemaweb.com/js-array) \(d\)
 
-[_29_ 고차 함수](https://poiemaweb.com/js-array-higher-order-function) \(d\) 
+[_29_ 고차 함수](https://poiemaweb.com/js-array-higher-order-function) \(d\)
 
 
 
@@ -104,7 +104,7 @@
 
 
 
-### ECMAScript6 문법 
+### ECMAScript6 문법
 
 [_1_ let, const와 블록 레벨 스코프](https://poiemaweb.com/es6-block-scope) \(a\)
 
@@ -136,69 +136,69 @@
 
 
 
-## 스터디 제안 
+## 스터디 제안
 
 > 각자의 깃북을 만들어 챕터별 간단하게 정리해보는 방식 : [https://april.gitbook.io/learning-js/](https://april.gitbook.io/learning-js/) 를 참고합니다.
 
-### 4월 
+### 4월
 
 #### 커리큘럼 : 기초
 
-* a단계 : 기본 개념 4개, 기본 문법 4개, es6 1개 
+* a단계 : 기본 개념 4개, 기본 문법 4개, es6 1개
 
-#### 실습 
+#### 실습
 
-* inputNumber, Modal, 햄버거메뉴 등 실습 1, 2단계 씩 할 수 있는 만큼 진행 
+* inputNumber, Modal, 햄버거메뉴 등 실습 1, 2단계 씩 할 수 있는 만큼 진행
 
-### 5 ~ 6월 
+### 5 ~ 6월
 
-#### 커리큘럼 : 초급 
+#### 커리큘럼 : 초급
 
-* b단계 : 기본 개념 1개, 기본 문법 6개,  js 특징 2개, es6 1개 
-* c단계 : 표준 내장 객체 소개 2개, 돔 이벤트 3개 
+* b단계 : 기본 개념 1개, 기본 문법 6개,  js 특징 2개, es6 1개
+* c단계 : 표준 내장 객체 소개 2개, 돔 이벤트 3개
 
-#### 실습 
+#### 실습
 
-* 실습을 통한 DOM제어 및 실무 능력 향상. 1, 2단계 이후 단계에도 도전 
+* 실습을 통한 DOM제어 및 실무 능력 향상. 1, 2단계 이후 단계에도 도전
 
-### 6 ~ 7월 
+### 6 ~ 7월
 
-#### 커리큘럼 : 초급 
+#### 커리큘럼 : 초급
 
 * d단계 : 표준 내장 객체 7개
 
-#### 실습 
+#### 실습
 
 * 실습 추가. UI제어 JS 실무 가능  
 
-### 8월 ~ 
+### 8월 ~
 
-#### 커리큘럼 : 중급 
+#### 커리큘럼 : 중급
 
-* e단계 : js 특징 4개, es6 2개 
+* e단계 : js 특징 4개, es6 2개
 
-#### 실습 
+#### 실습
 
-* 기존에 실습한 것들을 컴포넌트화, 실제 개발환경과 동일하게 구현 
+* 기존에 실습한 것들을 컴포넌트화, 실제 개발환경과 동일하게 구현
 
-#### 커리큘럼 : 
+#### 커리큘럼 :
 
-* f단계 : 데이터 통신 3개,  es6 1개, 이 외에도 백엔드 api기초 지식 동시 필요 \(http등\) 
+* f단계 : 데이터 통신 3개,  es6 1개, 이 외에도 백엔드 api기초 지식 동시 필요 \(http등\)
 
-#### 실습 
+#### 실습
 
-* 실제 백엔드 api 연동하여 구현해보며 나오는 이슈들을 접하고 해결해본다. 
+* 실제 백엔드 api 연동하여 구현해보며 나오는 이슈들을 접하고 해결해본다.
 
 
 
-## 스터디 진행 정리 
+## 스터디 진행 정리
 
-### 1주차 - 4월 3째주 \(4/15~19\) 
+### 1주차 - 4월 3째주 \(4/15~19\)
 
-[1 프로그래밍이란?](https://poiemaweb.com/coding) \(a\) 
+[1 프로그래밍이란?](https://poiemaweb.com/coding) \(a\)
 
-* inputNumber 1단계를 예로 들어 프로그래밍적 사고를 해보자. 
-* 프로그래밍 순서도 
+* inputNumber 1단계를 예로 들어 프로그래밍적 사고를 해보자.
+* 프로그래밍 순서도
 
 [2 자바스크립트란?](https://poiemaweb.com/js-introduction) \(a\)
 
@@ -213,14 +213,11 @@
 * 개발자 도구
 * Node.js, npm, liveServer 간단소개   
 
-[4 브라우저 동작 원리](https://poiemaweb.com/js-browser) \(a\) 
+[4 브라우저 동작 원리](https://poiemaweb.com/js-browser) \(a\)
 
-* 브라우저 동작원리와 script 태그 위치 
+* 브라우저 동작원리와 script 태그 위치
 
-그 외 
+그 외
 
-* Webpack : [https://medium.com/@OutOfBedlam/webpack-%EC%86%8C%EA%B0%9C-d595f93d5c28](https://medium.com/@OutOfBedlam/webpack-%EC%86%8C%EA%B0%9C-d595f93d5c28) 
-* Gulp, Webpack 차이 : [https://fullest-sway.me/blog/2017/03/29/tool-each/](https://fullest-sway.me/blog/2017/03/29/tool-each/) 
-
-
-
+* Webpack : [https://medium.com/@OutOfBedlam/webpack-%EC%86%8C%EA%B0%9C-d595f93d5c28](https://medium.com/@OutOfBedlam/webpack-%EC%86%8C%EA%B0%9C-d595f93d5c28)
+* Gulp, Webpack 차이 : [https://fullest-sway.me/blog/2017/03/29/tool-each/](https://fullest-sway.me/blog/2017/03/29/tool-each/)
