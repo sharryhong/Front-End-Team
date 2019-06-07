@@ -20,6 +20,6 @@
 
 ## 스터디콥 과제1. 입력한 문자열의 길이를 알려주는 프로그램 작성 
 
-* PAGES : 
-* CODE : [https://github.com/lhyekwang/source/blob/2%EB%B2%88/study/03\_cop.html](https://github.com/lhyekwang/source/blob/2%EB%B2%88/study/03_cop.html)
+* PAGES : [https://sharryhong.github.io/Front-End-Team/studyCoP01/ex01-base/ex01-base-bean.html](https://sharryhong.github.io/Front-End-Team/studyCoP01/ex01-base/ex01-base-bean.html)
+* CODE : [https://github.com/sharryhong/Front-End-Team/blob/master/studyCoP01/ex01-base/ex01-base-bean.html](https://github.com/sharryhong/Front-End-Team/blob/master/studyCoP01/ex01-base/ex01-base-bean.html)
 

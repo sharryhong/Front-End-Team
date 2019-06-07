@@ -1,11 +1,11 @@
 # JS Study
 
-> 아래 사이트 \(여니 추천\) 튜토리얼 순서를 재정리해보았습니다. a -&gt; b -&gt; c ...   
-> 반드시 순서대로 볼 필요는 없습니다. :\)   
-> 바빠서 실습을 못했을 경우는 아래 순서대로 진행하고,   
+> 아래 사이트 \(여니 추천\) 튜토리얼 순서를 재정리해보았습니다. a -&gt; b -&gt; c ...  
+> 반드시 순서대로 볼 필요는 없습니다. :\)  
+> 바빠서 실습을 못했을 경우는 아래 순서대로 진행하고,  
 > 실습의 단계별 코딩 -&gt; 스터디시 아래 개념 함께 보기 -&gt; 코드 리펙토링 -&gt; 다음단계 진행하는 식이면 좋을 것 같아요.
 
-https://poiemaweb.com/
+[https://poiemaweb.com/](https://poiemaweb.com/)
 
 ### 기본 개념 !
 
@@ -19,9 +19,7 @@ https://poiemaweb.com/
 
 [_31_ 동기식 처리 모델 vs 비동기식 처리 모델](https://poiemaweb.com/js-async) \(b\)
 
-
-
-### 자바스크립트 기본 문법과 표준 내장 객체 소개       
+### 자바스크립트 기본 문법과 표준 내장 객체 소개
 
 [_5_ 자바스크립트의 기본 문법](https://poiemaweb.com/js-syntax-basics) \(a\)
 
@@ -44,11 +42,9 @@ https://poiemaweb.com/
 [_16_ 보다 안정적인 자바스크립트 개발 환경을 위한 Strict mode](https://poiemaweb.com/js-strict-mode) \(b\)
 
 [_21_ 빌트인 객체](https://poiemaweb.com/js-built-in-object) \(c\)  
-     : 관련 MDN  [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global\_Objects](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects)
+: 관련 MDN [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global\_Objects](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects)
 
 [_22_ 전역 객체](https://poiemaweb.com/js-global-object) \(c\)
-
-
 
 ### DOM & Event
 
@@ -57,8 +53,6 @@ https://poiemaweb.com/
 [_32_ 이벤트](https://poiemaweb.com/js-event) \(c\)
 
 [_33_ 디바이스의 방향 정보를 다루는 자바스크립트 이벤트](https://poiemaweb.com/js-event-device-orientation) \(c\)
-
-
 
 ### 자바스크립트의 특징
 
@@ -74,9 +68,7 @@ https://poiemaweb.com/
 
 [_20_ 자바스크립트 객체지향 프로그래밍](https://poiemaweb.com/js-object-oriented-programming) \(e\)
 
-
-
-### 표준 내장 객체    
+### 표준 내장 객체
 
 [_23_ Number 레퍼 객체](https://poiemaweb.com/js-number) \(d\)
 
@@ -92,17 +84,13 @@ https://poiemaweb.com/
 
 [_29_ 고차 함수](https://poiemaweb.com/js-array-higher-order-function) \(d\)
 
-
-
-### 데이터 통신   
+### 데이터 통신
 
 [_34_ 비동기식 처리 모델과 Ajax](https://poiemaweb.com/js-ajax) \(f\)
 
 [_35_ REST\(Representational State Transfer\) API](https://poiemaweb.com/js-rest-api) \(f\)
 
 [_36_ Single Page Application & Routing](https://poiemaweb.com/js-spa) \(f\)
-
-
 
 ### ECMAScript6 문법
 
@@ -133,8 +121,6 @@ https://poiemaweb.com/
 [_13_ Babel과 Webpack을 이용한 ES6 환경 구축 ①](https://poiemaweb.com/es6-babel-webpack-1)
 
 [_14_ Babel과 Webpack을 이용한 ES6 환경 구축 ②](https://poiemaweb.com/es6-babel-webpack-2)
-
-
 
 ## 스터디 제안
 
@@ -189,8 +175,6 @@ https://poiemaweb.com/
 
 * 실제 백엔드 api 연동하여 구현해보며 나오는 이슈들을 접하고 해결해본다.
 
-
-
 ## 스터디 진행 정리
 
 ### 1주차 - 4월 3째주 \(4/15~19\)
@@ -219,5 +203,6 @@ https://poiemaweb.com/
 
 그 외
 
-* Webpack : [https://medium.com/@OutOfBedlam/webpack-%EC%86%8C%EA%B0%9C-d595f93d5c28](https://medium.com/@OutOfBedlam/webpack-%EC%86%8C%EA%B0%9C-d595f93d5c28)
+* Webpack : [https://medium.com/@OutOfBedlam/webpack-%EC%86%8C%EA%B0%9C-d595f93d5c28](https://medium.com/@OutOfBedlam/webpack-소개-d595f93d5c28)
 * Gulp, Webpack 차이 : [https://fullest-sway.me/blog/2017/03/29/tool-each/](https://fullest-sway.me/blog/2017/03/29/tool-each/)
+
