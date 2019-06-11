@@ -11,7 +11,7 @@
 1. 해당 저장소 폴더가 있다면 rm -rf Front-End-Team 해서 삭제
 1. fork된 자신의 저장소로 가서 git 주소 복사 git@github.com:devhaeyeon/Front-End-Team.git 저라면 저 깃주소가 나옴
 1. git clone git@github.com:devhaeyeon/Front-End-Team.git
-1. git branch scarlett 자신의 닉네임으로 브랜치 만들기
+1. git branch scarlett 자신의 닉네임으로 브랜치 만들기 (브랜치를 사용안 할지, 닉네임으로 할지, 과제번호로 할지 정하면 될 듯 : 이 부분에 따라서 몇개의 단계는 달라질 듯)
 1. git checkout scarlett
 1. 과제 폴더로 이동, 작업 진행
 1. git commit blablabla 
