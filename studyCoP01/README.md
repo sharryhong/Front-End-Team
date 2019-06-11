@@ -17,6 +17,7 @@
 1. git commit blablabla 
 1. git push origin scarlett
 1. 깃헙 페이지에서 PR 버튼 딱 한번 머지 전에 스탑.
+1. 샤리 깃헙에 머지 완료 되면 fork뜬 자신의 브랜치를 master로 PR해서 머지.
 
 ## origin 있는 것과 싱크 맞추기
 
