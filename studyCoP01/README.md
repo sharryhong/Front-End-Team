@@ -13,7 +13,17 @@
 1. git clone git@github.com:devhaeyeon/Front-End-Team.git
 1. git branch scarlett 자신의 닉네임으로 브랜치 만들기
 1. git checkout scarlett
-1. studyCop01로 이동, 작업 진행
+1. 과제 폴더로 이동, 작업 진행
 1. git commit blablabla 
 1. git push origin scarlett
 1. 깃헙 페이지에서 PR 버튼 딱 한번 머지 전에 스탑.
+
+## origin 있는 것과 싱크 맞추기
+
+- 참고 : http://www.notforme.kr/archives/1631
+- git remote -v
+- git remote add upstream git@github.com:sharryhong/Front-End-Team.git
+- git remote -v
+- git fetch upstream
+- git checkout master
+- git merge upstream/master
