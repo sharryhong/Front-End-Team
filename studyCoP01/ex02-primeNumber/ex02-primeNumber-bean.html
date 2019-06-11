@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <title>count example</title>    
+    <style>  
+        body{margin:0;padding:0}
+        label{display:block} 
+        textarea {float:left;width:200px;height:200px;}  
+        .desc_type1{color:blue;font-weight:bold}
+        .desc_type2{color:red;font-weight:bold}
+    </style>    
+</head>
+<body>   
+    <h1>소수판별하기</h1>     
+    <h2>숫자범위입력하기</h2>
+    <label for="inputNumFirst">숫자앞부분</label>
+    <input type="text" id="inputNumFirst">
+    <label for="inputNumLast">숫자뒷부분</label>
+    <input type="text" id="inputNumLast">    
+    <button id="btnResult">결과보기</button>
+    <strong>확인한숫자배열</strong><p class="desc_type1"></p>
+    <strong>솟수결과숫자배열</strong><p class="desc_type2"></p>
+    <dl>
+        <dt>소수</dt>
+        <dd>1과 자기자신을 제외하고는 나누어떨어지는 수가 없는 자연수</dd>
+    </dl>
+    <script>
+        'use strict';  
+        
+        var btnResult = document.getElementById("btnResult");
+        var inputNumFirst = document.getElementById("inputNumFirst");
+        var inputNumLast = document.getElementById("inputNumLast");
+        var descType1 = document.querySelector(".desc_type1");
+        var descType2 = document.querySelector(".desc_type2");
+        var numberArrary = new Array();
+        var resultArrary = new Array();        
+        
+        function primeFind(){
+            numberArrary = [];       
+            resultArrary = [];       
+            var inputNumFirstValue= Number(inputNumFirst.value);
+            var inputNumLastValue= Number(inputNumLast.value);
+            var numberLength = inputNumLastValue-inputNumFirstValue+1;
+            // console.log(inputNumFirstValue);
+            // console.log(inputNumLastValue);
+            // console.log(numberLength);                   
+
+            for(var i=0 ; i<numberLength ; i++){
+                // console.log(inputNumFirstValue + "iF" +i + "th")
+                numberArrary.push(inputNumFirstValue + i);
+                
+                for(var n = 0;n<inputNumLastValue ; n++){
+                    // console.log(numberArrary[i] + " : numberArrary[i]")
+                    // console.log(Number(n+1) + " : n+1")
+                    // console.log(numberArrary[i] / Number(n+1) + " : RESUTLE")
+                    
+                    if(numberArrary[i] / Number(n+1) === numberArrary[i] && numberArrary[i] !== Number(1)){
+                        console.log(numberArrary[i] + " 나는소숭")
+                        resultArrary.push(numberArrary[i]);
+                    }                   
+                }                    
+            }            
+
+            console.log(numberArrary);
+            descType1.innerHTML=numberArrary;
+            descType2.innerHTML=resultArrary;
+
+            // document.write(numberArrary);
+
+           
+            
+        }
+
+        btnResult.addEventListener("click", primeFind);
+
+
+    </script>
+</body>
+</html>
