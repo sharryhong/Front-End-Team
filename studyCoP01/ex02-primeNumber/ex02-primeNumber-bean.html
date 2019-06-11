@@ -36,41 +36,53 @@
         var descType1 = document.querySelector(".desc_type1");
         var descType2 = document.querySelector(".desc_type2");
         var numberArrary = new Array();
-        var resultArrary = new Array();        
+        var resultInnerArrary = new Array();        
+        var resultArrary = new Array();    
+        var c;      
         
         function primeFind(){
-            numberArrary = [];       
+            numberArrary = [];        
             resultArrary = [];       
+            resultInnerArrary = [];      
             var inputNumFirstValue= Number(inputNumFirst.value);
             var inputNumLastValue= Number(inputNumLast.value);
             var numberLength = inputNumLastValue-inputNumFirstValue+1;
             // console.log(inputNumFirstValue);
             // console.log(inputNumLastValue);
-            // console.log(numberLength);                   
+            //  console.log(numberLength + "numberLength");                   
 
             for(var i=0 ; i<numberLength ; i++){
                 // console.log(inputNumFirstValue + "iF" +i + "th")
                 numberArrary.push(inputNumFirstValue + i);
-                
-                for(var n = 0;n<inputNumLastValue ; n++){
-                    // console.log(numberArrary[i] + " : numberArrary[i]")
-                    // console.log(Number(n+1) + " : n+1")
-                    // console.log(numberArrary[i] / Number(n+1) + " : RESUTLE")
-                    
-                    if(numberArrary[i] / Number(n+1) === numberArrary[i] && numberArrary[i] !== Number(1)){
-                        console.log(numberArrary[i] + " 나는소숭")
-                        resultArrary.push(numberArrary[i]);
-                    }                   
-                }                    
-            }            
 
-            console.log(numberArrary);
+                // console.log(numberArrary + "array");
+                // console.log(Number(numberArrary.length -1) + "numberArrary.length.last");
+                // console.log(numberArrary[numberArrary.length -1]);
+                var clacNum = numberArrary[numberArrary.length -1];
+                // console.log(clacNum + " clacNum");
+                
+                for(var n = 0; n<=clacNum ; n ++){
+                    // console.log(clacNum / n + "result");                    
+                    c = n +2;                    
+                    // console.log(clacNum + " clacNum");
+                    // console.log(Number(c) + " c");
+                    // console.log(clacNum/c + " clacNum/c");
+                    //resultArrary.push(clacNum/c);
+                    if(Number.isInteger(clacNum/c)){                    
+                        resultInnerArrary.push(clacNum/c);                                                
+                    }                      
+                }                  
+                // console.log(resultInnerArrary);
+                if(resultInnerArrary.length === 1){
+                    resultArrary.push(clacNum);
+                }  
+                resultInnerArrary=[];     
+            }                   
+
+            // console.log(numberArrary);
             descType1.innerHTML=numberArrary;
             descType2.innerHTML=resultArrary;
-
-            // document.write(numberArrary);
-
-           
+            // document.write(numberArrary);      
             
         }
 
