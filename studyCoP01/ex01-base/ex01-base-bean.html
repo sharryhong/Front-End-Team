@@ -30,23 +30,7 @@
             <dt>최대글</dt>
             <dd id="maxCount">0</dd>
         </dl>
-        <p class="txt_desc">글을 더이상 쓰지 못합니다.</p>
-    </div>
-    <div class="box_example" style="border:1px solid blue">
-        <h2>섭씨를 입력받아 화씨로 바꾸는것</h2>
-        <div style="overflow:hidden;width:600px;margin:0 auto">
-            <dl style="float:left">
-                <dt><label for="celsiusInput">섭씨온도(℃)</label></dt>
-                <dd><input type="text" id="celsiusInput"></dd>
-            </dl>
-            <dl style="float:right">
-                <dt><label for="fahrenheitInput">화씨온도(℉)</label></dt>
-                <dd><input type="text" id="fahrenheitInput"></dd>
-            </dl>
-            <button class="button_change" style="overflow:hidden;height:38px">섭씨온도(℃) 에서 화씨온도(℉) 로 바꾸기</button>
-        </div>
-        <p>F = 9/5 C + 32</p>
-        <p class="txt_desc">숫자를 넣어야 계산을해주지</p>
+        <p class="txt_desc hide">글을 더이상 쓰지 못합니다.</p>
     </div>
     <script>
         'use strict';
@@ -54,25 +38,26 @@
         var maxCount = document.getElementById("maxCount");
         var descGuide = document.getElementById("descGuide");
         var descGuideNum = descGuide.getElementsByTagName("em");
-        var txtDesc = document.querySelectorAll(".txt_desc");
-        var celsisusInput = document.getElementById("celsiusInput");
-        var fahrenheitInput = document.getElementById("fahrenheitInput");
-        var buttonChange = document.querySelector(".button_change");
-        var boxExample = document.querySelectorAll(".box_example");
-        var currentCountNum;
-        var maxCount;
-        var maxCountNum = Number(10); // 최대값
-        maxCount.innerHTML = maxCountNum;
-        textArea.setAttribute('maxlength',maxCountNum)
+        var txtDesc = document.querySelector(".txt_desc");
+        var currentCount = document.getElementById("currentCount");
+        var currentCountNum = 0; // 초기값
+        var MAX_COUNT_NUM = 10; // 최대값
+        maxCount.innerHTML = MAX_COUNT_NUM;
+        currentCount.innerHTML = currentCountNum;
+        textArea.setAttribute('maxlength',MAX_COUNT_NUM);
 
-        currentCount.innerHTML = 0; //  현재값
-
+<<<<<<< Updated upstream
         for(var i = 0; i<txtDesc.length; i++){
             txtDesc[i].classList.add('hide');// 초기셋팅
         }
+=======
+        // currentCount.innerHTML = 0; //  현재값
+
+>>>>>>> Stashed changes
         for(var i=0 ; i<descGuideNum.length ; i++){
-            descGuideNum[i].innerHTML = maxCountNum;
+            descGuideNum[i].innerHTML = MAX_COUNT_NUM;
         }
+<<<<<<< Updated upstream
         //console.log(descGuideNum);
         function checkLength(e){
             // console.log(e);
@@ -80,38 +65,22 @@
             // console.log(txtDesc);
             //console.log(boxExample);
             var n = 0;
+=======
+       
+        function checkCharactorLength(e){
+>>>>>>> Stashed changes
             currentCount.innerHTML = textArea.value.length;
             currentCountNum = Number(currentCount.innerHTML);
-            console.log(currentCountNum);
-            console.log(maxCountNum);
-            if(currentCountNum === maxCountNum){
-                txtDesc[n].classList.remove('hide');
-                txtDesc[n].classList.add('show');
-            }else if(currentCountNum < maxCountNum && txtDesc[n].classList.contains('show')){
-                txtDesc[n].classList.add('hide');
-                txtDesc[n].classList.remove('show');
+            if(currentCountNum === MAX_COUNT_NUM){
+                txtDesc.classList.remove('hide');
+                txtDesc.classList.add('show');
+            }else if(currentCountNum <= MAX_COUNT_NUM && txtDesc.classList.contains('show')){
+                txtDesc.classList.add('hide');
+                txtDesc.classList.remove('show');
             }
         }
 
-        function transUnit(){
-            var t = celsisusInput.value;
-            var n = 1;
-            console.log(t.length);
-            console.log(txtDesc[n]);
-
-            if(t.length == 0){
-                // console.log(celsisusInput.value);
-                txtDesc[n].classList.remove('hide');
-                txtDesc[n].classList.add('show');
-            }else if(txtDesc[n].classList.contains('show')){
-                txtDesc[n].classList.remove('show');
-                txtDesc[n].classList.add('hide');
-            }
-        }
-
-        textArea.addEventListener('keyup',checkLength);
-
-        buttonChange.addEventListener('click',transUnit);
+        textArea.addEventListener('keyup',checkCharactorLength);
 
 
     </script>
