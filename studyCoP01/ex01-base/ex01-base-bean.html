@@ -46,29 +46,13 @@
         currentCount.innerHTML = currentCountNum;
         textArea.setAttribute('maxlength',MAX_COUNT_NUM);
 
-<<<<<<< Updated upstream
-        for(var i = 0; i<txtDesc.length; i++){
-            txtDesc[i].classList.add('hide');// 초기셋팅
-        }
-=======
         // currentCount.innerHTML = 0; //  현재값
 
->>>>>>> Stashed changes
         for(var i=0 ; i<descGuideNum.length ; i++){
             descGuideNum[i].innerHTML = MAX_COUNT_NUM;
         }
-<<<<<<< Updated upstream
-        //console.log(descGuideNum);
-        function checkLength(e){
-            // console.log(e);
-            // console.log(e.path[1]);
-            // console.log(txtDesc);
-            //console.log(boxExample);
-            var n = 0;
-=======
        
         function checkCharactorLength(e){
->>>>>>> Stashed changes
             currentCount.innerHTML = textArea.value.length;
             currentCountNum = Number(currentCount.innerHTML);
             if(currentCountNum === MAX_COUNT_NUM){
