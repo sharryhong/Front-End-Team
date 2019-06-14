@@ -14,55 +14,17 @@
     .confirm{text-decoration:underline}
     </style>
 <body>
-    <!-- 
-        1. 1로 나누었을 경우 자신과 나로 나누었을 경우 1일 때만
-        1, 2, 3,5,7,11,13......
-        2. 나누었을 때 정수로 떨어지는 경우 중 이전의 숫자와 나눌때는 정수가 아님.
-        3. 수의 체계를 봅시다. (실수,유리수,무리수,정수,정수가 아닌 유리수, 자연수- 음의정수, 양의정수)수가 나옴.
-        4. 자바스크립트에서 정수 체크 검색 isNumeric?
-        5. i변수 증가 하게 한 뒤 i라는 숫자와 i까지 나누는 숫자 구함.....
-        6. 숫자가 두개가 필요함.
-           for를 두개를 돌려야하는데... 찍어본다. 계속
-        7. for하나 돌릴 경우 / 두개돌릴 경우 테스트
-        8. 배열로 되지 않아 결과값 안나옴. -> 배열 만드는 법 알기. -> 길이 확인이 안되어 계속 한 주석의 잔재들.
-        9. 알기전에 스터디 모임.
-    -->
-
-    
+    <!-- 배열로 적용하는 것 해보는 중 > 2번째 수업 이후 연산자 잘못 사용으로 재 작업 -->
     <script>
-    function ex2(){
-        var arrNumber = new Array(); // 배열 선언
+    function primeNumber(){
         for(i = 1; i<10; i++){
-            i=+i;
-            document.write("<br>");
-
             for(j = 1; j<=i; j++){
-                j=+j;
-                // document.write('<span style="color:blue">'+j+'</span>');
-                
-                var w = i/j;
-                var t = Number.isInteger(w);  // 정수인지 확인
-
-                // console.log(arrNumber[t]); 45 undefined가 출력.
-
-                // document.write('<div class="result">'+w+'</div>');
-                // document.write(t); // 나누었을 때 값이 나오는지 확인, t의 결과값이 나오는지 확인.
-
-                // console.log(i,t.length); -> 결과값이 undefined로 계속 떨어짐. -> bean에게 문의로 배열로 되지 않아서로 결론. 
-                
-                // console.log(w,i,j);
-                if(t){ // true일 때 아래
-                    document.write('<div class="result">'+w+'</div>');
-                    document.write(t);
-                }
+                let x =i/j;
+                document.write('<div class="">'+i+ '/'+j+'='+x+'</div>');
             }
-            
         }
-
-        
     }
-    
-     ex2();
+    primeNumber();
     </script>
     
 </body>
