@@ -12,35 +12,7 @@
     .on{border:1px solid red}
     </style>
 <body>
-    <!-- 1 : javascript 문자열 검색으로 length 찾음
-    <script>
-    var txtInput = '문자의 길이';
-    document.write(txtInput.length);
-
-    </script>
-
-    2 : 입력 폼의 아이디 값 찾기 검색
-
-    3. document.write(txtInp)로 했을 경우 
-    [object HTMLInputElement]로 출력
-
-    4. value값을 넣어봄. => 3번과 같은 출력값이 나옴
-
-    5. length 넣는거 까먹음. ;;
-
-    6. querySelect -> 에러남., getElementById -> 이게 에러가 안남
-        두개의 차이와 querySelect일 경우 value안 먹힘.
-
-    7. 아이디에 대한 길이는 출력 가능
-
-    7-1. span태그에 길이 값 받는 부분 innerHtml 검색.
-
-    8. 실시간 입력값 받는거 해야함. (javascript input value 실시간 검색)
-
-    9. onKeyUp 나옴
-    -->
-
-    입력 : <input type="text" id="txtInp" value="" onkeyup="inKeyHandler()">
+    입력 : <input type="text" id="txtInp" value="" onkeyup="getStringLength()">
     <br><br>
 
     출력 : <span class="txt_output"></span>
@@ -50,13 +22,20 @@
     </div>
 
     <script>
-    function inKeyHandler(){
-        var txtIn = document.getElementById("txtInp").value;
-        var txtOut = document.querySelector('.txt_output').innerHTML=txtIn;
-        var txtOutNum = document.querySelector('.txt_length').innerHTML=txtIn.length;
-    }
-    
+    (getStringLength = function(){
+        let textInput = document.getElementById("txtInp");
+        let textOutput = document.querySelector(".txt_output");
+        let textLength = document.querySelector(".txt_length");
+        let textValue  = textInput.value;
+
+        textOutput.innerHTML = textInput.value;
+        textLength.innerHTML = textValue.length;
+    })
+    // function inKeyHandler(){
+    //     var txtIn = document.getElementById("txtInp").value;
+    //     var txtOut = document.querySelector('.txt_output').innerHTML=txtIn;
+    //     var txtOutNum = document.querySelector('.txt_length').innerHTML=txtIn.length;
+    // }
     </script>
-    
 </body>
 </html>

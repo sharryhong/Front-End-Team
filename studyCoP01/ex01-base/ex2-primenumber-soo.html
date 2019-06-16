@@ -16,14 +16,14 @@
 <body>
     <!-- 배열로 적용하는 것 해보는 중 > 2번째 수업 이후 연산자 잘못 사용으로 재 작업 -->
     <script>
-    function primeNumber(){
+    (primeNumber = function(){
         for(i = 1; i<10; i++){
             for(j = 1; j<=i; j++){
-                let resultNumber =i/j;
-                document.write('<div class="">'+i+ '/'+j+'='+resultNumber+'</div>');
+                let primeNumberResult = i/j;
+                document.write('<div class="">'+i+ '/'+j+'='+primeNumberResult+'</div>');
             }
         }
-    }
+    })
     primeNumber();
     </script>
     
