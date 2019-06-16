@@ -159,10 +159,16 @@
 
 01. 비트와 바이트 \(190605\) 
 
+*  [https://www.youtube.com/watch?v=2NQI4hqvWiM&list=PL2rijbugmnWSdcqiKeJFqOw\_WLxcJT7cm&index=5](https://www.youtube.com/watch?v=2NQI4hqvWiM&list=PL2rijbugmnWSdcqiKeJFqOw_WLxcJT7cm&index=5) 
+
 02 .진수, 연산자 \(190613\) 
+
+* 진수 [https://www.youtube.com/watch?v=sIBEbPt3RvU&list=PL2rijbugmnWSdcqiKeJFqOw\_WLxcJT7cm&index=6](https://www.youtube.com/watch?v=sIBEbPt3RvU&list=PL2rijbugmnWSdcqiKeJFqOw_WLxcJT7cm&index=6) 
+* 연산자 [https://poiemaweb.com/js-operator](https://poiemaweb.com/js-operator) 
 
 03. 데이터타입과 변수 \(190619\) 
 
+* [https://poiemaweb.com/js-data-type-variable](https://poiemaweb.com/js-data-type-variable)
 * 변수를 함수 밖 or 내부에서 선언하는 차이 알아보기 
 * 변수를 왜 선언하고 사용하는지 알아보자. 선언안해도 될때는? 
 * 참조변수와 call by reference\(인프런강의\) 
