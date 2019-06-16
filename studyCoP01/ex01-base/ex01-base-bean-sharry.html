@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <title>count example</title>
+    <style>
+        body{margin:0;padding:0}
+        label{display:block}
+        textarea {float:left;width:200px;height:200px;}
+        .hide{display:none}
+        .show{display:block}
+        .txt_desc{color:red}
+        .desc_type1 em{color:red;font-weight:bold}
+    </style>
+</head>
+<body>
+    <h1>연습문제</h1>
+    <div class="box_example" style="overflow:hidden;border:1px solid red">
+        <h2>입력한 문자열의 길이를 알려줌</h2>
+        <label for="inputText">글입력하기</label>
+        <p id="descGuide" class="desc_type1"><em></em>&nbsp;글자 까지만 쓸수 있어요.<em></em>&nbsp;글자이상쓰면 안돼욤.</p>
+        <textarea type="text" id="textArea"></textarea>
+        <dl class="num">
+            <dt>현재글</dt>
+            <dd id="currentCount">0</dd>
+        </dl>
+        <dl class="num" >
+            <dt>최대글</dt>
+            <dd id="maxCount">0</dd>
+        </dl>
+        <p class="txt_desc hide">글을 더이상 쓰지 못합니다.</p>
+    </div>
+    <script>
+        'use strict';
+        var textArea = document.getElementById("textArea");
+        var maxCount = document.getElementById("maxCount");
+        var descGuide = document.getElementById("descGuide");
+        var descGuideNum = descGuide.getElementsByTagName("em");
+        var txtDesc = document.querySelector(".txt_desc");
+        var currentCount = document.getElementById("currentCount");
+        const MAX_COUNT_NUM = 10; // 최대값
+        maxCount.innerHTML = MAX_COUNT_NUM;
+        currentCount.innerHTML = 0; // 초기값 셋팅
+        textArea.setAttribute('maxlength', MAX_COUNT_NUM);
+
+        for(var i=0 ; i<descGuideNum.length ; i++){
+            descGuideNum[i].innerHTML = MAX_COUNT_NUM;
+        }
+
+        function checkCharactorLength(){ // 함수 매개변수에 e를 쓰셨는데, 이건 이벤트객체(나중에 나오면 설명)인데 여기선 사용안하므로 삭제했어요~
+            var textLength = this.value.length; // this써도 동일한데 this에 관해서 공부해봅시다~
+            currentCount.innerHTML = textLength;
+            if(textLength === MAX_COUNT_NUM){
+                txtDesc.classList.remove('hide');
+                txtDesc.classList.add('show');
+            }else if(textLength <= MAX_COUNT_NUM && txtDesc.classList.contains('show')){
+                txtDesc.classList.add('hide');
+                txtDesc.classList.remove('show');
+            }
+        }
+
+        textArea.addEventListener('keyup',checkCharactorLength);
+
+
+    </script>
+</body>
+</html>
