@@ -155,7 +155,7 @@
 * Webpack : [https://medium.com/@OutOfBedlam/webpack-%EC%86%8C%EA%B0%9C-d595f93d5c28](https://medium.com/@OutOfBedlam/webpack-소개-d595f93d5c28)
 * Gulp, Webpack 차이 : [https://fullest-sway.me/blog/2017/03/29/tool-each/](https://fullest-sway.me/blog/2017/03/29/tool-each/)
 
-## 콥 커리큘럼 
+## studyCoP  
 
 01. 비트와 바이트 \(190605\) 
 
