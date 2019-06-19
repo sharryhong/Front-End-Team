@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>구구단 gugudan</title>
+</head>
+<body>
+
+<div class="inpbox">
+    <button id="multiplyBtn">2 곱하기</button>
+    <input type="text" id="inputNumber" value="">
+</div>
+    
+<script>
+"use strict";
+// 연산자, for, 배열알기.
+// 2의 구구단 알기
+// 2에 1씩 증감한 수치를 곱한다.
+// 2에다 1~9까지 반복.
+// 곱한값을 출력한다.
+
+var multiplyBtn = document.getElementById("multiplyBtn");
+var inputNumber = document.getElementById("inputNumber");
+var countNumber = 1;
+inputNumber.value = countNumber;
+
+//1씩 증가
+function gugudanCount(){
+    var valueNumber = 2;
+    var multiplyNumber = countNumber++;
+    var resultNumver = valueNumber * multiplyNumber;
+    inputNumber.value = resultNumver;
+};
+
+//버튼 클릭시 제어
+multiplyBtn.addEventListener("click", gugudanCount);
+</script>
+</body>
+</html>
