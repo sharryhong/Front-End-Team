@@ -40,24 +40,22 @@
         var descGuideNum = descGuide.getElementsByTagName("em");
         var txtDesc = document.querySelector(".txt_desc");
         var currentCount = document.getElementById("currentCount");
-        var currentCountNum = 0; // 초기값
-        var MAX_COUNT_NUM = 10; // 최대값
+        const MAX_COUNT_NUM = 10; // 최대값 // 변수 커리큘럼 할때 const에 대해 설명드릴게요~ 
         maxCount.innerHTML = MAX_COUNT_NUM;
-        currentCount.innerHTML = currentCountNum;
-        textArea.setAttribute('maxlength',MAX_COUNT_NUM);
-
-        // currentCount.innerHTML = 0; //  현재값
+        currentCount.innerHTML = 0; // 초기값 셋팅
+        textArea.setAttribute('maxlength', MAX_COUNT_NUM);
 
         for(var i=0 ; i<descGuideNum.length ; i++){
             descGuideNum[i].innerHTML = MAX_COUNT_NUM;
         }
-        function checkCharactorLength(){
-            currentCount.innerHTML = textArea.value.length;
-            currentCountNum = Number(currentCount.innerHTML);
-            if(currentCountNum === MAX_COUNT_NUM){
+
+        function checkCharactorLength(){ // 함수 매개변수에 e를 쓰셨는데, 이건 이벤트객체(나중에 나오면 설명)인데 여기선 사용안하므로 삭제했어요~
+            var textLength = this.value.length; // this써도 동일한데 this에 관해서 공부해봅시다~
+            currentCount.innerHTML = textLength;
+            if(textLength === MAX_COUNT_NUM){
                 txtDesc.classList.remove('hide');
                 txtDesc.classList.add('show');
-            }else if(currentCountNum <= MAX_COUNT_NUM && txtDesc.classList.contains('show')){
+            }else if(textLength <= MAX_COUNT_NUM && txtDesc.classList.contains('show')){
                 txtDesc.classList.add('hide');
                 txtDesc.classList.remove('show');
             }
