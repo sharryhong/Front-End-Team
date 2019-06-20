@@ -170,7 +170,7 @@
 
 * [https://poiemaweb.com/js-data-type-variable](https://poiemaweb.com/js-data-type-variable) // 나중에 해도 되는 건 스킵 
 * 변수를 함수 밖 or 내부에서 선언하는 차이 알아보기 
-* 변수를 왜 선언하고 사용하는지 알아보자. 선언안해도 될때는? 
+* 굳이 변수로 사용하지 않아도 될때는? 
 * var의 문제점, 즉시실행함수
 * let, const설명
 * 참조변수와 call by reference\(인프런강의\) : 나중에 하기 
