@@ -8,23 +8,35 @@
     <style>  
         body{margin:0;padding:0}
         label{display:block} 
-        textarea {float:left;width:200px;height:200px;}  
-        .desc_type1{color:blue;font-weight:bold}
+        .box_array{overflow:hidden;padding:30px;border:1px solid rebeccapurple}  
+        .box_array+.box_array{border-top:none}  
+        .box_array label{float:left}  
+        .box_array input{float:left}  
+        .box_array button{float:left}  
+        .box_array strong{float:left}  
+        .box_array p{float:left;margin:0;padding:0}  
         .desc_type2{color:red;font-weight:bold}
     </style>    
 </head>
 <body>   
     <h1>소수판별하기</h1>     
-    <h2>숫자범위입력하기</h2>
-    <label for="inputNumFirst">숫자앞부분</label>
-    <input type="text" id="inputNumFirst">
-    <label for="inputNumLast">숫자뒷부분</label>
-    <input type="text" id="inputNumLast">    
-    <button id="btnResult">결과보기</button>
-    <strong>확인한숫자배열</strong><p class="desc_type1"></p>
-    <strong>솟수결과숫자배열</strong><p class="desc_type2"></p>
+    <h2>배열범위입력하기</h2>     
+    <strong>입력해주신 배열 범위내에서 소수를 구합니다.</strong>
+    <div class="box_array">
+        <label for="inputNumFirst">배열앞부분 : </label>
+        <input type="text" id="inputNumFirst">
+        <label for="inputNumLast">배열앞부분 : </label>
+        <input type="text" id="inputNumLast"> 
+        <button id="btnResult">결과보기</button>
+    </div> 
+    <div class="box_array">
+        <strong>입력한 숫자 배열: </strong><p class="desc_type1"></p>
+    </div>
+    <div class="box_array">
+        <strong>범위내 소수 결과 배열 : </strong><p class="desc_type2"></p>
+    </div>
     <dl>
-        <dt>소수</dt>
+        <dt>소수란?</dt>
         <dd>1과 자기자신을 제외하고는 나누어떨어지는 수가 없는 자연수</dd>
     </dl>
     <script>
@@ -34,16 +46,12 @@
         var inputNumFirst = document.getElementById("inputNumFirst");
         var inputNumLast = document.getElementById("inputNumLast");
         var descType1 = document.querySelector(".desc_type1");
-        var descType2 = document.querySelector(".desc_type2");
-        var numberArrary = new Array();
-        var resultInnerArrary = new Array();        
-        var resultArrary = new Array();    
-        var c;      
+        var descType2 = document.querySelector(".desc_type2");  
         
         function primeFind(){
-            numberArrary = [];        
-            resultArrary = [];       
-            resultInnerArrary = [];      
+            var numberArrary = [];        
+            var resultArrary = [];       
+            var resultInnerArrary = [];      
             var inputNumFirstValue= Number(inputNumFirst.value);
             var inputNumLastValue= Number(inputNumLast.value);
             var numberLength = inputNumLastValue-inputNumFirstValue+1;
@@ -54,22 +62,17 @@
             for(var i=0 ; i<numberLength ; i++){
                 // console.log(inputNumFirstValue + "iF" +i + "th")
                 numberArrary.push(inputNumFirstValue + i);
-
                 // console.log(numberArrary + "array");
                 // console.log(Number(numberArrary.length -1) + "numberArrary.length.last");
                 // console.log(numberArrary[numberArrary.length -1]);
                 var clacNum = numberArrary[numberArrary.length -1];
                 // console.log(clacNum + " clacNum");
                 
-                for(var n = 0; n<=clacNum ; n ++){
-                    // console.log(clacNum / n + "result");                    
-                    c = n +2;                    
+                for(var n = 2; n<=clacNum ; n ++){
+                    // console.log(clacNum / n + "result");                     
                     // console.log(clacNum + " clacNum");
-                    // console.log(Number(c) + " c");
-                    // console.log(clacNum/c + " clacNum/c");
-                    //resultArrary.push(clacNum/c);
-                    if(Number.isInteger(clacNum/c)){                    
-                        resultInnerArrary.push(clacNum/c);                                                
+                    if(Number.isInteger(clacNum/n)){                    
+                        resultInnerArrary.push(clacNum/n);                                                
                     }                      
                 }                  
                 // console.log(resultInnerArrary);
