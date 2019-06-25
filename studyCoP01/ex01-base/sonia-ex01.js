@@ -1,11 +1,10 @@
-// 텍스트 입력 수 구하기
- var textArea = document.querySelector("#textArea");
+var textArea = document.querySelector("#textArea");
+var numCount = document.querySelector('#numCount');
 
- textArea.addEventListener('keydown', function() {
-    var textValue = textArea.value;
-    var textLength = textValue.length;
-    
-    // 구한 갯수 카운터에 넣기
-    var countText = document.querySelector('#countText');
-    countText.textContent = textLength;
+textArea.addEventListener('keydown', function() {
+   //텍스트필드의 입력한 글자 갯수 구하기
+   var textLength = textArea.value.length;
+   
+   // 구한 갯수 카운터에 넣기
+   numCount.textContent = textLength;
 });
