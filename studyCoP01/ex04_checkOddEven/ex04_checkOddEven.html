@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>javascript</title>
+    </head>
+    <style>
+    .menu {background:green}
+    .menu_link{display:inline-block;padding:10px;background:dodgerblue;color:#fff;font-size:20px;line-height:20px;}
+    
+    .active{background:goldenrod}
+    .on{border:1px solid red}
+    .result{display:inline-block;min-width:30px;height:30px;padding:10px;background:orange;border-radius:50%;text-align:center;box-sizing:border-box}
+    .confirm{text-decoration:underline}
+    </style>
+<body>
+    <input type="text" id="textInput" value="">
+    
+    <script>
+    let keyNumber = document.getElementById("textInput");
+    keyNumber.addEventListener("onkeyup", function () {
+        console.log(keyNumber.value);
+        function checkOddEven(){
+            let i = keyNumber.value;
+            if(i%2 === 0){
+                    document.write('짝수입니다.');
+            }else{
+                document.write('홀수입니다.');
+            }
+        }
+    });
+    
+    </script>
+    
+</body>
+</html>
