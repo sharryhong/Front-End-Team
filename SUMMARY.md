@@ -26,7 +26,7 @@
 * [formVaildation](freeform-project/formvaildation.md)
 * [Select](freeform-project/select.md)
 * [bmi](freeform-project/bmi.md)
-* [test](freeform-project/test.md)
+* [Loop](freeform-project/test.md)
 
 ## Tutorial
 
