@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <title>count example</title>    
+    <style>  
+        body{margin:0;padding:0}
+        .box_checkbox{overflow:hidden}
+        .box_checkbox label, input, p , button{float:left;margin:0;padding:0}
+        p em{font-weight:bold;color:red}
+
+    </style>    
+</head>
+<body>   
+    <h1>4차과제</h1>
+    <h2>짝수홀수판별</h2>
+    <div class="box_checkbox">
+        <label for="inputNumber">숫자넣기</label> 
+        <input type="number" id="inputNumber" placeholder="2">
+        <p>나는 <em id="NumberResult">짝수</em></p>
+    </div>     
+    <h2>문장판별</h2> 
+        <input type="text" id="inputDesc" placeholder="star">
+        <button id="checkDesc">문장판별하기</button>
+        <p><em id="descResultEm"></em> 문장입니다.</p>
+    <script>
+        'use strict';
+        const inputNumber = document.getElementById("inputNumber");
+        const inputDesc = document.getElementById("inputDesc");
+        const numberResult = document.getElementById("NumberResult");        
+        const descResultEm = document.getElementById("descResultEm");        
+        const checkDescButton = document.getElementById("checkDesc");        
+        const oddNumber= "홀수";
+        const evenNumber= "짝수";
+        const nomalDesc = "보통";
+        const lowerDesc = "소문자";
+        const upperDesc = "대문자";
+        const errorDesc = "잘못된";
+              
+        
+        checkNumber();      
+
+        function checkNumber(){   
+            let inputNumberValue = inputNumber.value;         
+            if(!inputNumberValue){   
+                inputNumberValue = inputNumber.placeholder;
+            }              
+            // console.log(inputNumberValue);      
+            let result = (inputNumberValue % 2 == 0) ? true : false;   
+            // console.log(numberResult);              
+            if(result){
+                numberResult.innerHTML = evenNumber;
+            }else{
+                numberResult.innerHTML = oddNumber;
+            }        
+
+        }
+
+        function checkDesc(){
+            let inputDescValue = inputDesc.value; 
+            
+            if(!inputDescValue){
+                alert('문장판별 칸에 글자를 입력하세요')
+            }            
+            
+            let transUpperInputDescVlaue = inputDescValue.toUpperCase();
+            let transLowerInputDescVlaue = inputDescValue.toLowerCase();
+            console.log("inputDescValue + " + inputDescValue);
+            console.log("transUpperInputDescVlaue + " + transUpperInputDescVlaue);
+            console.log("transLowerInputDescVlaue + " + transLowerInputDescVlaue);
+
+
+
+            if(transUpperInputDescVlaue === inputDescValue){
+                descResultEm.innerHTML = upperDesc;
+            }else if(transLowerInputDescVlaue === inputDescValue){
+                descResultEm.innerHTML = lowerDesc;
+            }else if((transUpperInputDescVlaue === transLowerInputDescVlaue) &&  (transLowerInputDescVlaue === inputDescValue)){
+                descResultEm.innerHTML = errorDesc;              
+            }else{
+                descResultEm.innerHTML = nomalDesc;  
+            }
+        }
+
+        
+
+        inputNumber.addEventListener("keyup", checkNumber);
+        inputNumber.addEventListener("change", checkNumber);
+        checkDescButton.addEventListener("click", checkDesc);
+
+    </script>
+</body>
