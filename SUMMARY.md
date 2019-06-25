@@ -26,7 +26,7 @@
 * [formVaildation](freeform-project/formvaildation.md)
 * [Select](freeform-project/select.md)
 * [bmi](freeform-project/bmi.md)
-* [test](freeform-project/test.md)
+* [loop](freeform-project/loop.md)
 
 ## Tutorial
 
@@ -44,4 +44,3 @@
 * [Sonia](members/sonia.md)
 * [Yeony](members/yeony.md)
 * [Soo](members/soo.md)
-
