@@ -2,7 +2,7 @@
 description: 반복문 과제
 ---
 
-# Loop
+# loop
 
 인프런 강의 [https://www.inflearn.com/course/javascript-자바스크립트-codesquad-masters\_lv1](https://www.inflearn.com/course/javascript-자바스크립트-codesquad-masters_lv1) 
 

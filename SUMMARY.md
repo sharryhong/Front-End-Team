@@ -25,7 +25,10 @@
 * [Modal \(layer popup\)](freeform-project/modal-layer-popup.md)
 * [formVaildation](freeform-project/formvaildation.md)
 * [Select](freeform-project/select.md)
-* [bmi](freeform-project/bmi.md)
+* [BMI](freeform-project/bmi.md)
+* [Operator](freeform-project/operator.md)
+* [PrimeNumber](freeform-project/primenumber.md)
+* [If\(Condition\)](freeform-project/if-condition.md)
 * [loop](freeform-project/loop.md)
 
 ## Tutorial
@@ -44,3 +47,4 @@
 * [Sonia](members/sonia.md)
 * [Yeony](members/yeony.md)
 * [Soo](members/soo.md)
+
