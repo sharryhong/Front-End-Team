@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <title>count example</title>    
+    <style>  
+        body{margin:0;padding:0}
+        .box_multiplcation{float:left} 
+    </style>    
+</head>
+<body>   
+    <h1>구구단</h1>   
+    
+    <script>
+        'use strict';          
+        for(var i = 2; i<10 ; i++){
+            document.write( "<strong>" + i + " 단" + "</strong>" + "<br>");
+            for(var n = 1 ; n<10 ; n ++){
+                document.write( String(i) + "*" + String(n) + "=" + Number(i * n) + "<br>");
+            }
+
+        }
+    </script>
+</body>
+</html>
