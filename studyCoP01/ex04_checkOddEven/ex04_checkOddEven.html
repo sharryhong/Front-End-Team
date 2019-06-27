@@ -10,24 +10,26 @@
     
     .active{background:goldenrod}
     .on{border:1px solid red}
-    .result{display:inline-block;min-width:30px;height:30px;padding:10px;background:orange;border-radius:50%;text-align:center;box-sizing:border-box}
+    .result{min-width:30px;height:30px;padding:10px;background:orange;text-align:center;box-sizing:border-box}
     .confirm{text-decoration:underline}
     </style>
 <body>
-    <input type="text" id="textInput" value="">
-    
+    <input type="text" id="textInput" value=""><button id="buttonResult">결과를 알려주세요.</button>
+    <div class="result"></div>
     <script>
     let keyNumber = document.getElementById("textInput");
-    keyNumber.addEventListener("onkeyup", function () {
-        console.log(keyNumber.value);
-        function checkOddEven(){
-            let i = keyNumber.value;
-            if(i%2 === 0){
-                    document.write('짝수입니다.');
+    let buttonResult = document.getElementById("buttonResult");
+    let resultText = document.querySelector(".result");
+    buttonResult.addEventListener("click", function () {
+        (function checkOddEven(){
+
+            let keyNumberResult = keyNumber.value;
+            if(keyNumberResult%2 === 0){
+                resultText.innerHTML = keyNumberResult+'는 짝수입니다.';
             }else{
-                document.write('홀수입니다.');
+                resultText.innerHTML = keyNumberResult+'는 홀수입니다.';
             }
-        }
+        })();
     });
     
     </script>
