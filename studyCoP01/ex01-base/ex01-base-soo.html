@@ -22,12 +22,11 @@
     </div>
 
     <script>    
-    //v4 리팩토링
+    //v4.1 리팩토링
     let textInput = document.getElementById("textInput");
     let textOutput = document.querySelector(".txt_output");
     let textLength = document.querySelector(".txt_length");
     textInput.addEventListener('keyup', function(){
-        let textValue = textInput.value;
         textOutput.innerHTML = textInput.value;
         textLength.innerHTML = textValue.length;
     });
