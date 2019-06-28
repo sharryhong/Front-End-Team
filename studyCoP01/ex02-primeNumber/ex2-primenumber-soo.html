@@ -13,23 +13,33 @@
     .confirm{text-decoration:underline}
     </style>
 <body>
+    <input type="text" id="inputNumber" value="">
+    <div class="area_num"></div>
     <script>
-    "use strict";
-    // for문 배열은 나중에 리팩토링...
-    function primeNumber(){
-        let primeNumber = [];
-        let i,j;
-        for(i = 2; i<10; i++){
-            for(j = 1; j<=i; j++){
-                let primeNumberResult = i%j;
-                if(primeNumberResult === 0){
-                    document.write('<div class="">'+i+ '/'+j+'='+primeNumberResult+'</div>');
-                }
+    // v3 모르겠음. 이후에 다시.
+    'use strict';
+    let inputNumberGet = document.getElementById("inputNumber");
+    let outputValue = document.querySelector(".area_num");
+    inputNumberGet.addEventListener('keyup', function(){
+        let inputNumberValue = inputNumberGet.value;
+        for(let i=2;i<=inputNumberValue;i++){
+            if(inputNumberValue % i === 0){
+                outputValue.innerHTML = inputNumberValue;
             }
         }
-    }
-    primeNumber();
-    </script>
+    });
     
+    // for문 배열은 나중에 리팩토링... 소수의 늪.
+    // (primeNumber = function(){
+    //         let primeNumber = [];
+    //         let i,j;
+    //         for(i = 1; i<10; i++){
+    //             for(j = 2; j<=i; j++){
+    //                 let primeNumberResult = i%j;
+    //                 document.write('<div class="">'+i+ '/'+j+'의 나머지'+primeNumberResult+'</div>');
+    //             }
+    //         }
+    // })();
+    </script>
 </body>
 </html>

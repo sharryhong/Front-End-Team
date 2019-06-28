@@ -15,15 +15,24 @@
     </style>
 <body>
     <script>
-    // v3 즉시실행함수   IIFE
-    (multiplicationTable = function(){
-        for(i = 1; i<10; i++){
-            for(j = 1; j<10; j++){
-                multiplicationNumberResult = i*j; // 변수 재사용하지 않을 경우 선언하지 않아도 됨.
-                document.write('<div class="">'+i+ '*'+j+'='+multiplicationNumberResult+'</div>');
+    'use strict';
+    function multiplicationTable(){
+        for(let i=1; i<10; i++){
+            for(let j=1; j<i; j++){
+                document.write('<div>'+i+ '*'+j+'='+i*j+'</div>');
             }
         }
-    })();
+    }
+    multiplicationTable();
+
+    // v3 즉시실행함수   IIFE  예시
+    // (function (){
+    //     for(var i = 1; i<10; i++){
+    //         for(var j = 1; j<10; j++){
+    //             document.write('<div class="">'+i+ '*'+j+'='+i*j+'</div>');
+    //         }
+    //     }
+    // })();
     
     // v2
     // (multiplicationTable = function(){
