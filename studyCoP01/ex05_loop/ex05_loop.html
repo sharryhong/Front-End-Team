@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <title>LOOP</title>    
+    <style>  
+        body{margin:0;padding:0}
+        .box_checkbox{overflow:hidden}
+        .box_checkbox label, input, p , button{float:left;margin:0;padding:0}
+        p em{font-weight:bold;color:red}
+    </style>    
+</head>
+<body>   
+    <h1>5차과제</h1>
+    <h2>일정구간의 조건의 합을 구해 봅시다.</h2>
+    <button id="evenNumbersSum">결과보기</button>
+    <strong class="num_result"></strong>  
+    <script>
+        'use strict';  
+        const numResult = document.querySelector('.num_result');      
+        const evenNumbersSum = document.getElementById('evenNumbersSum');   
+        function setEvenNumberSum (){  
+            let minNumber = 1;      
+            let maxNumber = 100; 
+            let sum = 0;  
+            let n = minNumber;              
+            while(n <= maxNumber){ 
+                if(n%2 == 0){
+                    sum = sum+n; 
+                }
+                n ++;
+            }            
+            numResult.innerHTML = minNumber + " 에서 " + maxNumber +" 까지의 " + "짝수" + "의 합은" + sum + "입니다.";
+        }
+        evenNumbersSum.addEventListener('click' , setEvenNumberSum)
+
+    </script>
+</body>
+</html>
