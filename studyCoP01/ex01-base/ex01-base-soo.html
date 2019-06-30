@@ -27,7 +27,8 @@
     let textOutput = document.querySelector(".txt_output");
     let textLength = document.querySelector(".txt_length");
     textInput.addEventListener('keyup', function(){
-        textOutput.innerHTML = textInput.value;
+        let textValue = textInput.value;
+        textOutput.innerHTML = textValue;
         textLength.innerHTML = textValue.length;
     });
 
