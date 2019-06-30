@@ -21,15 +21,15 @@
     let buttonResult = document.getElementById("buttonResult");
     let resultText = document.querySelector(".result");
     buttonResult.addEventListener("click", function () {
-        (function checkOddEven(){
-
+        function checkOddEven(){
             let keyNumberResult = keyNumber.value;
             if(keyNumberResult%2 === 0){
                 resultText.innerHTML = keyNumberResult+'는 짝수입니다.';
             }else{
                 resultText.innerHTML = keyNumberResult+'는 홀수입니다.';
             }
-        })();
+        }
+        checkOddEven();
     });
     
     </script>
