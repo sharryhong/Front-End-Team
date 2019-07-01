@@ -17,22 +17,30 @@
     <input type="text" id="textInput" value=""><button id="buttonResult">결과를 알려주세요.</button>
     <div class="result"></div>
     <script>
+    // 문자 입력시 출력 안되게 하거나 경고는 추후 리팩토링
     let keyNumber = document.getElementById("textInput");
     let buttonResult = document.getElementById("buttonResult");
     let resultText = document.querySelector(".result");
-    buttonResult.addEventListener("click", function () {
-        function checkOddEven(){
-            let keyNumberResult = keyNumber.value;
-            if(keyNumberResult%2 === 0){
-                resultText.innerHTML = keyNumberResult+'는 짝수입니다.';
-            }else{
-                resultText.innerHTML = keyNumberResult+'는 홀수입니다.';
-            }
-        }
-        checkOddEven();
-    });
-    // test
 
+    buttonResult.addEventListener("click", function(){
+        let keyNumberResult = keyNumber.value;
+        if(keyNumberResult%2 === 0){
+            resultText.innerHTML = keyNumberResult+'는 짝수입니다.';
+        }else{
+            resultText.innerHTML = keyNumberResult+'는 홀수입니다.';
+        }
+    });
+
+    // 아래 처럼 콜백함수를 불러 올 수 있음.
+    // function checkOddEven(){
+    //     let keyNumberResult = keyNumber.value;
+    //     if(keyNumberResult%2 === 0){
+    //         resultText.innerHTML = keyNumberResult+'는 짝수입니다.';
+    //     }else{
+    //         resultText.innerHTML = keyNumberResult+'는 홀수입니다.';
+    //     }
+    // }
+    // buttonResult.addEventListener("click",  checkOddEven);
     </script>
 
 </body>
