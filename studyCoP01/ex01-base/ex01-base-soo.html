@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>javascript</title>
+    </head>
+    <style>
+    .menu {background:green}
+    .menu_link{display:inline-block;padding:10px;background:dodgerblue;color:#fff;font-size:20px;line-height:20px;}
+    
+    .active{background:goldenrod}
+    .on{border:1px solid red}
+    </style>
+<body>
+    입력 : <input type="text" id="textInput" value="">
+    <br><br>
+
+    출력 : <span class="txt_output"></span>
+    <div>
+        입력하고 있는 문자의 길이
+        <span class="txt_length">0</span>
+    </div>
+
+    <script>    
+    //v4.1 리팩토링
+    let textInput = document.getElementById("textInput");
+    let textOutput = document.querySelector(".txt_output");
+    let textLength = document.querySelector(".txt_length");
+    textInput.addEventListener('keyup', function(){
+        let textValue = textInput.value;
+        textOutput.innerHTML = textValue;
+        textLength.innerHTML = textValue.length;
+    });
+
+    //v3 실행을 못시키고 있음. ;;
+    // (function(){
+    //     // 한번만 찾을 수 있으면 되므로 전역변수로 선언
+    //     let textInput = document.getElementById("textInput");
+    //     let textOutput = document.querySelector(".txt_output");
+    //     let textLength = document.querySelector(".txt_length");
+        
+    //     function getStringLength(){
+    //         let textValue = textInput.value;
+    //         textOutput.innerHTML = textInput.value;
+    //         textLength.innerHTML = textValue.length;
+    //     }
+    //     getStringLength();
+    // })();
+    
+    // v2
+    // (getStringLength = function(){
+    //     let textInput = document.getElementById("txtInp");
+    //     let textOutput = document.querySelector(".txt_output");
+    //     let textLength = document.querySelector(".txt_length");
+    //     let textValue  = textInput.value;
+
+    //     textOutput.innerHTML = textInput.value;
+    //     textLength.innerHTML = textValue.length;
+    // })
+
+    // v1
+    // function inKeyHandler(){
+    //     var txtIn = document.getElementById("txtInp").value;
+    //     var txtOut = document.querySelector('.txt_output').innerHTML=txtIn;
+    //     var txtOutNum = document.querySelector('.txt_length').innerHTML=txtIn.length;
+    // }
+    </script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 description: Body Mass Index(BMI) 체질량지수 계산기
 ---
 
-# bmi
+# BMI
 
 결과참고 : [http://www.foodsafetykorea.go.kr/portal/healthyfoodlife/bmiCalcurator.do?menu\_no=3071&menu\_grp=MENU\_NEW03](http://www.foodsafetykorea.go.kr/portal/healthyfoodlife/bmiCalcurator.do?menu_no=3071&menu_grp=MENU_NEW03) 
 

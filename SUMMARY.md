@@ -25,8 +25,11 @@
 * [Modal \(layer popup\)](freeform-project/modal-layer-popup.md)
 * [formVaildation](freeform-project/formvaildation.md)
 * [Select](freeform-project/select.md)
-* [bmi](freeform-project/bmi.md)
-* [test](freeform-project/test.md)
+* [BMI](freeform-project/bmi.md)
+* [Operator](freeform-project/operator.md)
+* [PrimeNumber](freeform-project/primenumber.md)
+* [If\(Condition\)](freeform-project/if-condition.md)
+* [loop](freeform-project/loop.md)
 
 ## Tutorial
 
