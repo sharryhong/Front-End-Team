@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>javascript</title>
+    </head>
+    <style>
+    .menu {background:green}
+    .menu_link{display:inline-block;padding:10px;background:dodgerblue;color:#fff;font-size:20px;line-height:20px;}
+
+    .active{background:goldenrod}
+    .on{border:1px solid red}
+    </style>
+<body>
+    입력 : <input type="text" id="txtInp" value="" onkeyup="getStringLength()">
+    <br><br>
+
+    출력 : <span class="txt_output"></span>
+    <div>
+        입력하고 있는 문자의 길이
+        <span class="txt_length">0</span>
+    </div>
+
+    <script>
+
+    {
+      let txtInp = document.getElementById("txtInp");
+      let txtOutput = document.querySelector('.txt_output');
+      let txtLength = document.querySelector('.txt_length');
+
+      function getStringLength(){
+        let txtInpValue = txtInp.value;
+        txtOutput.innerHTML = txtInpValue;
+        txtLength.innerHTML = txtInpValue.length;
+      }
+
+    }
+
+    </script>
+
+</body>
+</html>
