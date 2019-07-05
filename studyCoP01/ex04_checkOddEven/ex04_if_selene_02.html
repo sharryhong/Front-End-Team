@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>대소문자 판별하기</title>
+</head>
+<body>
+    <h1>대소문자 판별하기</h1>
+    <div class="inpbox">
+        <input type="text" id="inputTextStr" value="">
+        <button id="textOutButton">대소문자 판별하기</button>
+        <p id="textOutString"></p>
+    </div>
+
+    <script>
+        "use strict";
+        var textOutButton = document.getElementById("textOutButton");
+        var inputTextStr = document.getElementById("inputTextStr");
+        var textOutString = document.getElementById("textOutString");
+       
+
+        function textUpperLower() {
+            var textUpper = /[A-Z]/g;
+            var textLower = /[a-z]/g;
+            var textMatchUpper = inputTextStr.value.match(textUpper);
+            var textMatchLower = inputTextStr.value.match(textLower);
+            textOutString.innerHTML = '소문자';
+
+            if(checkEvenOdd === 0 ){
+
+            } else {
+
+            }
+        };
+        textOutButton.addEventListener('click', textUpperLower);
+
+        // toLowerCase는 소문자로 변환 , toUpperCase는 대문자로 변환 , toLocaleLowerCase와 toLowerCase 차이는?
+        // str.match(); 문자열을 비교한 결과 가져오기
+        // var str = 'ABCDEFGHIJKLabcdefghijkl MNOPQRSTUVWXYZ mnopqrstuvwxyz';
+        // var textUpper = /[A-Z]/g;
+        // var textLower = /[a-z]/g;
+        // var textMatchArray = str.match(textLower);
+
+        // console.log(textMatchArray);
+    </script>
+</body>
+</html>
