@@ -2,14 +2,14 @@
 description: '작성자 : 스칼렛'
 ---
 
-# array
+# array2
 
-- 배열에서 최대값, 최소값, 평균값, 홀수값을 구하시오
-    - 홀수값의 경우 입력한 배열 중에서 홀수값인 것을 리턴하면 됩니다.
-    - getMaxNum, getMinNum, getAverageNum, getOddNum 함수안을 완성하시오.
-    - return은 임의로 넣었습니다.
+* 배열에서 최대값, 최소값, 평균값, 홀수값을 구하시오
+  * 홀수값의 경우 입력한 배열 중에서 홀수값인 것을 리턴하면 됩니다.
+  * getMaxNum, getMinNum, getAverageNum, getOddNum 함수안을 완성하시오.
+  * return은 임의로 넣었습니다.
 
-```html
+```markup
 <style>
 .txt_result{display:block}
 </style>
@@ -100,3 +100,4 @@ description: '작성자 : 스칼렛'
 })();
 </script>
 ```
+

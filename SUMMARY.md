@@ -30,8 +30,8 @@
 * [PrimeNumber](freeform-project/primenumber.md)
 * [If\(Condition\)](freeform-project/if-condition.md)
 * [loop](freeform-project/loop.md)
-* [array](freeform-project/array.md)
-
+* [array1](freeform-project/array1.md)
+* [array2](freeform-project/array.md)
 
 ## Tutorial
 
