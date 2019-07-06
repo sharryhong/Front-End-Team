@@ -63,16 +63,12 @@
             } 
             let transUpperInputDescVlaue = inputDescValue.toUpperCase(); // 소문자변환해주기
             let transLowerInputDescVlaue = inputDescValue.toLowerCase(); // 대문자변환해주기
-            console.log("inputDescValue + " + inputDescValue);
-            console.log("transUpperInputDescVlaue + " + transUpperInputDescVlaue);
-            console.log("transLowerInputDescVlaue + " + transLowerInputDescVlaue);
-
 
             for(var i = 0; i<inputDescValue.length ; i++){
                 let inputDescValueCharCode = inputDescValue.charCodeAt(i);  
-                let result  = (inputDescValueCharCode > 123 )? "KOR" : "ENG"; // 숫자 0~9 => 48~57 영문 대문자 => 65~90 ,소문자 => 97~122
-                // console.log(result + " FOR");
-                if(result == "KOR") { // 한글이면 멈추시오.
+                let result  = (inputDescValueCharCode < 64)? false : (inputDescValueCharCode > 123  )? false : "ENG"; // 숫자 0~9 => 48~57 영문 대문자 => 65~90 ,소문자 => 97~122
+                // console.log(result + " result");
+                if(!result) { // 한글이면 멈추시오.
                     descResultEm.innerHTML = errorDesc;
                     return false;
                 }
