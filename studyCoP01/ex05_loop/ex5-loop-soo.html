@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>while, for 1~100 더하기</title>
+</head>
+<body>
+<div class="txt_oddplus"></div>
+<script>
+// v1
+'use strict';
+(function (){
+    // whie 1~100 더하기
+    let n =1;
+    let sum = 0;
+    const setOddPlusNumber = document.querySelector(".txt_oddplus");
+    while(n <= 100){
+        sum = n + sum;
+        n++;
+    }
+    // for(let n=0; n<=100; n++){
+    //     sum = sum + n;
+    // }
+    setOddPlusNumber.innerHTML = sum;
+})();
+</script>
+</body>
+</html>
