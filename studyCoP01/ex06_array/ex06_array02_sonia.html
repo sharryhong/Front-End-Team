@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>배열 연습2</title>
+</head>
+
+<body>
+    <style>
+        .txt_result {
+            display: block
+        }
+    </style>
+
+    <button class="btn_result" data-result-type='min'>
+        최소값
+    </button>
+    <button class="btn_result" data-result-type='max'>
+        최대값
+    </button>
+    <button class="btn_result" data-result-type='avg'>
+        평균값
+    </button>
+    <button class="btn_result" data-result-type='odd'>
+        홀수값
+    </button>
+    <span class="txt_result"></span>
+
+    <script>
+        (function () {
+            'use strict';
+            var inputArr = getInputNumber();
+            var btnElements = document.querySelectorAll('.btn_result');
+            var txtResultEl = document.querySelector('.txt_result');
+            var btnElsLength = btnElements.length;
+            var i = 0;
+
+            /* 최대값 */
+            function getMaxNum(arr) {
+                return Math.max.apply(null, arr);
+            }
+
+            /* 최소값 */
+            function getMinNum(arr) {
+                return Math.min.apply(null, arr);
+            }
+
+            /* 평균값 */
+            function getAverageNum(arr) {
+                var sum = 0;
+                for (i = 0; i < arr.length; i++) {
+                    sum += arr[i];
+                }
+                 return sum / arr.length;
+            }
+
+            /* 홀수값 */
+            function getOddNum(arr) {
+                for (i = 0; i < arr.length; i++) {
+                    if ( arr[i] % 2 !== 0 ) {
+                        return arr[i];
+                    }
+                }
+            }
+            
+            function getInputNumber() {
+                var arr = [];
+                for (var i = 0; i < 5; i++) {
+                    arr.push(Number(prompt(i + '인덱스 숫자 입력')));
+                }
+                return arr;
+            }
+
+            function viewResult(result) {
+                txtResultEl.innerHTML = result;
+            }
+
+            function getResult(e) {
+                var resultType = e.currentTarget.getAttribute('data-result-type');
+                var result = 0;
+                switch (resultType) {
+                    case 'max':
+                        result = getMaxNum(inputArr);
+                        break;
+                    case 'min':
+                        result = getMinNum(inputArr);
+                        break;
+                    case 'avg':
+                        result = getAverageNum(inputArr);
+                        break;
+                    case 'odd':
+                        result = getOddNum(inputArr);
+                        break;
+                }
+                viewResult(result);
+            }
+
+            function init() {
+                for (i; i < btnElsLength; i++) {
+                    btnElements[i].addEventListener('click', getResult);
+                }
+            }
+            init();
+        })();
+    </script>
+
+</body>
+
+</html>
