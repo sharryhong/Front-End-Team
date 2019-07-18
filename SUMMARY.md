@@ -32,6 +32,8 @@
 * [loop](freeform-project/loop.md)
 * [array1](freeform-project/array1.md)
 * [array2](freeform-project/array.md)
+* [loop2](freeform-project/loop2.md)
+* [function](freeform-project/function.md)
 
 ## Tutorial
 
