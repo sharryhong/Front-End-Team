@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>배열 연습</title>
+</head>
+<body>
+    <h2>배열 연습</h2>
+    
+    <script>
+        "use strict";
+    
+        var inputNumber = prompt('몇단을 출력할까요');
+        var number = Number(inputNumber);
+        var resultsNumber = [];
+
+        console.log(typeof inputNumber);
+        console.log(inputNumber + '단');
+
+        for (var i = 1; i < 10; i++) {
+            var answerNumber = number * i;
+            resultsNumber.push(answerNumber);
+            
+            console.log(resultsNumber);
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
