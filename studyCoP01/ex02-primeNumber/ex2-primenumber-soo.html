@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>javascript</title>
+    </head>
+    <style>
+    .inp_type1{height:40px;padding:0 10px;border:1px solid #ccc}
+    .btn_type1{height:40px;padding:0 10px;background:#fff;line-height:40px;color:#333}
+    .active{background:goldenrod}
+    .on{border:1px solid red}
+    .result{min-width:30px;height:30px;padding:10px;background:orange;text-align:center;box-sizing:border-box}
+    .confirm{text-decoration:underline}
+    </style>
+<body>
+    <input type="text" id="inputNumber" value="">
+    <div class="area_num"></div>
+    <script>
+    // v3 모르겠음. 이후에 다시.
+    'use strict';
+    let inputNumberGet = document.getElementById("inputNumber");
+    let outputValue = document.querySelector(".area_num");
+    inputNumberGet.addEventListener('keyup', function(){
+        let inputNumberValue = inputNumberGet.value;
+        for(let i=2;i<=inputNumberValue;i++){
+            if(inputNumberValue % i === 0){
+                outputValue.innerHTML = inputNumberValue;
+            }
+        }
+    });
+    
+    // for문 배열은 나중에 리팩토링... 소수의 늪.
+    // (primeNumber = function(){
+    //         let primeNumber = [];
+    //         let i,j;
+    //         for(i = 1; i<10; i++){
+    //             for(j = 2; j<=i; j++){
+    //                 let primeNumberResult = i%j;
+    //                 document.write('<div class="">'+i+ '/'+j+'의 나머지'+primeNumberResult+'</div>');
+    //             }
+    //         }
+    // })();
+    </script>
+</body>
+</html>
