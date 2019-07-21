@@ -53,20 +53,21 @@
             var btnElsLength = btnElements.length;
             var i = 0;
             var setArray =[];
-            var clickNumber = 0;
+            //var clickNumber = 0;
             var inputArr = getInputNumber();
             setArrayButton.addEventListener('click', getInputNumber);     
 
             function getInputNumber() {
-                var arr = [];
-                if(clickNumber !== 0){
+                // var arr = [];
+                if(setInputNumber.value){
                     setArray.push(setInputNumber.value);
                     setArrayElement.innerHTML = "{ " + setArray + " }";
                 }                          
-                clickNumber ++;     
+                // clickNumber ++;     
                 
-                arr = setArray; 
-                return arr;
+                // arr = setArray;
+                // console.log(clickNumber); 
+                return setArray;
                 //for(let)
                  
             }
