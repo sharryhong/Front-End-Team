@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>함수</title>
+    <style>
+    .multiplcation {overflow:hidden}
+    .box_grade{float:left;margin-right:20px}
+    .box_grade strong{display:block}
+    </style>
+</head>
+<body>
+    <h2>구구단</h2>
+    <p>2중 반복문 사용으로 2~9단 결과를 배열에 담아, 화면에 출력합니다.</p>
+    <div class="multiplcation">
+        <div class="box_grade">
+        </div>
+    </div>
+    <script>
+    "use strict";
+    let multiplcation = document.querySelector('.multiplcation');
+    let boxGrade = document.querySelectorAll('.box_grade');
+    let multiplcationGroup = "";
+
+    for(let i = 2 ; i <= 9 ; i++){
+        multiplcationGroup += `<div class="box_grade">`;
+        multiplcationGroup += "<strong>" + i + "단" +"</strong>";   
+        for(let n = 1 ; n<= 9 ; n++){
+             multiplcationGroup += i + "*" + n + "=" + i*n + "<br>";
+        }
+        multiplcationGroup += "</div>"
+    }
+    multiplcation.innerHTML=multiplcationGroup;
+    </script>
+</body>
+</html>
+
+
+
+
+
