@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <title>stringLength</title>
+</head>
+<body>
+<div class="inpbox">
+    <textarea id="inpString" cols="90" rows="5" title="한줄 토크를 달아주세요">캡틴아메리카엔드게임</textarea>
+    <button id="txtOutBtn">글자 길이</button>
+    <p>입력된 글자수 : <em id="txtOutString"></em></p>
+</div>
+
+<script>
+    "use strict";
+
+    // String length 알아보기 
+    // input에 value를 체크합니다.
+    // value에 문자열을 체크하고 길이를 알아봅니다.
+
+    var txtOutBtn = document.getElementById("txtOutBtn");
+    var inpString = document.getElementById("inpString");
+    var txtOutString = document.getElementById("txtOutString");
+
+    function textcount() {
+        var textValue = inpString.value;
+        txtOutString.innerHTML = textValue.length;
+    };
+
+    txtOutBtn.addEventListener('click', textcount);
+</script>
+</body>
+</html>
