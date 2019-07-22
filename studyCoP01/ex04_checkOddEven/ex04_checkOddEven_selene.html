@@ -11,10 +11,9 @@
     <script>
         let inputNumber = prompt('짝수홀수 판별하기');
         let checkNumber = Number(inputNumber);
-        let checkEvenOdd = checkNumber % 2;
 
         // 나머지값 0 이면 짝수, 1 이면 홀수
-        if(checkEvenOdd === 0 ){
+        if(checkNumber % 2 === 0 ){
             // console.log('짝수');
             document.write ( '<p>입력한 숫자 ' + inputNumber + '는 짝수입니다.</p>' );
         } else {
