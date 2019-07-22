@@ -8,23 +8,28 @@
 </head>
 <body>
     <script>
-        // 배열을 담을 변수 설정
         let result = [];
-
-        //구구단 2단 ~ 9단까지 돌리기
-        for(let n = 2; n <= 9; n++) {
-            // "n단" 출력하기
-            document.write("<h2>"+ n +"단"+"</h2>")
-            // 배열에 결과값 저장하기
-            for(let i = 1; i <= 9; i++) {
-                result[i - 1] = n * i;
-            }
-            // 배열 내용 출력하기
-            for(let j = 0; j <= 8; j++) {
-                document.write(n + " X " + (j + 1) + " = " + result[j]);
-                document.write("<br>");
+        function calculate() {
+            for(let n = 2; n <= 9; n++) {
+                // 배열에 결과값 저장하기
+                function save() {
+                    for(let i = 1; i <= 9; i++) {
+                        result[i - 1] = n * i;
+                    }
+                };
+                // 계산 결과를 화면에 출력
+                function print() {
+                    document.write("<h2>"+ n +"단"+"</h2>")
+                    for(let j = 0; j <= 8; j++) {
+                    document.write(n + " X " + (j + 1) + " = " + result[j]);
+                    document.write("<br>");
+                    }
+                };
+                save();
+                print();
             }
         }
+        calculate();
     </script>
 </body>
 </html>
