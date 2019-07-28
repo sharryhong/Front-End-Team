@@ -8,36 +8,39 @@
 
     /* 최대값 */
     function getMaxNum(arr) {
-        if(arr > arr){
-            console.log('비교하여 출력하면?'+arr);
-        }
-        return "최대값은 54입니다.";
+        var max = Math.max.apply(null, arr);
+        console.log(arr);
+        return max;
     }
 
     /* 최소값 */
     function getMinNum(arr) {
-        if(arr<arr){
-            console.log('최소의 값은?'+arr);
-        }
-        return "최소값은 54입니다.";
+        var min = Math.min.apply(null, arr);
+        console.log(arr);
+        return min;
     }
 
     /* 평균값 */
     function getAverageNum(arr) {
-        console.log(arr / arr.length);
-        // 해당 함수를 완성하시오
-        return "평균은 9입니다.";
+        var arrayLength = arr.length;
+        var avg = "";
+        for(var i = 0; i<arrayLength; i++){
+            var sum =+ arr[i];
+        }
+        var avg = sum / arrayLength;
+        return avg
     }
 
     /* 홀수값 */
     function getOddNum(arr) {
-        if(arr % 2 === 1){
-            console.log(arr+"은 홀수입니다.");
+        var odd = "";
+        if(Number(arr[i]) % 2 === 1){
+            var odd = arr+"은 홀수입니다.";
         }else{
-            console.log(arr+"은 짝수입니다.");
+            var odd = arr+"은 짝수입니다.";
         }
         // 해당 함수를 완성하시오
-        return "홀수는 1,4입니다.";
+        return odd;
     }
     function getInputNumber() {
         var arr = [];
@@ -65,8 +68,8 @@
                 result = getAverageNum(inputArr);
                 break;
             case 'odd' :
-            result = getOddNum(inputArr);
-            break;
+                result = getOddNum(inputArr);
+                break;
         }
         viewResult(result);
     }
