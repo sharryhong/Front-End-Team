@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>짝수홀수 판별하기</title>
+</head>
+<body>
+    <h1>짝수홀수 판별하기</h1>
+    <script>
+        let inputNumber = prompt('짝수홀수 판별하기');
+        let checkNumber = Number(inputNumber);
+
+        // 나머지값 0 이면 짝수, 1 이면 홀수
+        if(checkNumber % 2 === 0 ){
+            // console.log('짝수');
+            document.write ( '<p>입력한 숫자 ' + inputNumber + '는 짝수입니다.</p>' );
+        } else {
+            // console.log('홀수');
+            document.write ( '<p>입력한 숫자 ' + inputNumber + '는 홀수입니다.</p>' );
+        }
+    </script>
+</body>
+</html>

@@ -15,15 +15,59 @@
     </style>
 <body>
     <script>
-    (multiplicationTable = function(){
-        for(i = 1; i<10; i++){
-            for(j = 1; j<10; j++){
+    'use strict';
+    // v4 strict 및 함수로 수정
+    function multiplicationTable(){
+        for(let i = 1; i<10; i++){
+            document.write('<h3>'+i+' 단</h3>')
+            for(let j = 1; j<10; j++){
                 let multiplicationNumberResult = i*j;
                 document.write('<div class="">'+i+ '*'+j+'='+multiplicationNumberResult+'</div>');
             }
         }
-    })
+    }
     multiplicationTable();
+      
+//     (multiplicationTable = function(){
+//         for(i = 1; i<10; i++){
+//             for(j = 1; j<10; j++){
+//                 let multiplicationNumberResult = i*j;
+//                 document.write('<div class="">'+i+ '*'+j+'='+multiplicationNumberResult+'</div>');
+//             }
+//         }
+//     })
+//     multiplicationTable();
+
+//     'use strict';
+//     function multiplicationTable(){
+//         for(let i=1; i<10; i++){
+//             for(let j=1; j<i; j++){
+//                 document.write('<div>'+i+ '*'+j+'='+i*j+'</div>');
+//             }
+//         }
+//     }
+//     multiplicationTable();
+
+    // v3 즉시실행함수   IIFE  예시
+    // (function (){
+    //     for(var i = 1; i<10; i++){
+    //         for(var j = 1; j<10; j++){
+    //             document.write('<div class="">'+i+ '*'+j+'='+i*j+'</div>');
+    //         }
+    //     }
+    // })();
+    
+    // v2
+    // (multiplicationTable = function(){
+    //     for(i = 1; i<10; i++){
+    //         for(j = 1; j<10; j++){
+    //             let multiplicationNumberResult = i*j;
+    //             document.write('<div class="">'+i+ '*'+j+'='+multiplicationNumberResult+'</div>');
+    //         }
+    //     }
+    // })
+    // multiplicationTable();
+
     </script>
     
 </body>

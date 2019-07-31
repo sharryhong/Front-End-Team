@@ -30,6 +30,12 @@
 * [PrimeNumber](freeform-project/primenumber.md)
 * [If\(Condition\)](freeform-project/if-condition.md)
 * [loop](freeform-project/loop.md)
+* [array1](freeform-project/array1.md)
+* [array2](freeform-project/array.md)
+* [loop2](freeform-project/loop2.md)
+* [function](freeform-project/function.md)
+* [function2](freeform-project/function2.md)
+* [Object](freeform-project/object.md)
 
 ## Tutorial
 
