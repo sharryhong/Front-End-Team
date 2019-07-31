@@ -59,11 +59,14 @@
 
             /* 홀수값 */
             function getOddNum(arr) {
+                var oddNum = [];
                 for (i = 0; i < arr.length; i++) {
                     if ( arr[i] % 2 !== 0 ) {
-                        return arr[i];
+                        oddNum.push(arr[i]);                        
+                        console.log("TCL: getOddNum -> oddNum", oddNum)
                     }
                 }
+                return oddNum; 
             }
             
             function getInputNumber() {
