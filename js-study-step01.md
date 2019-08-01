@@ -8,7 +8,7 @@ description: FT개발을 위한 장기적인 스터디 중 1단계
 
 * **프로그래밍적 사고, 문제해결능력 기르기**
 
-## 커리큘럼 
+## 커리큘럼 \(총 13회 예상\) 
 
 ### 1-1. 기초
 
@@ -87,4 +87,6 @@ description: FT개발을 위한 장기적인 스터디 중 1단계
 * 속성과 메소드
 * 객체에서 this 
 * 과제 - 객체로 구구단 리펙토링 : [https://www.inflearn.com/course/javascript-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-codesquad-masters\_lv1/lecture/10715](https://www.inflearn.com/course/javascript-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-codesquad-masters_lv1/lecture/10715) 
+
+이후 추가 예정 
 
