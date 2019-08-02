@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <title>array</title>
+    <style>
+        body{margin:0;padding:0}
+        .txt_result{display:block}
+    </style>
+</head>
+<body>
+    <h1>연습문제</h1>
+    <div class="box_example" style="overflow:hidden;border:1px solid red">
+        <h2>구구단 결과 배열에 저장한 후 배열의 결과를 출력한다. (2단만해도됨)</h2>
+        <strong class="multiplcationArray"></strong>
+    </div>    
+    <div class="box_example" style="overflow:hidden;border:1px solid red">
+        <h2>배열에서 최대값, 최소값, 평균값, 홀수값을 구하시오</h2>
+        <ul>
+            <li>홀수값의 경우 입력한 배열 중에서 홀수값인 것을 리턴하면 됩니다.</li>
+            <li>getMaxNum, getMinNum, getAverageNum, getOddNum 함수안을 완성하시오.</li>
+            <li>return은 임의로 넣었습니다.</li>
+        </ul>
+        <input type="text"/ title="숫자만넣으시오" id="setInputNumber"><button id="setArrayButton">배열만들기</button><p id="setArrayElement" style="display: inline-block;margin:0"></p>
+        <div>
+        <button class="btn_result" data-result-type='min'>최소값</button>
+        <button class="btn_result" data-result-type='max'>최대값</button>
+        <button class="btn_result" data-result-type='avg'>평균값</button>
+        <button class="btn_result" data-result-type='odd'>홀수값</button>          
+        <span class="txt_result"></span>
+        </div>
+    </div>
+    <script>
+        'use strict';
+        var setMultiplcationArray = document.querySelector(".multiplcationArray");
+        var multiplcationArray = [];
+        var i = 1;
+        while(i < 10){
+            multiplcationArray.push(2*i);
+            i++;
+        }
+        console.log(multiplcationArray);
+        setMultiplcationArray.innerHTML = multiplcationArray;
+
+        (function() {
+            var setInputNumber = document.getElementById("setInputNumber");
+            var setArrayElement = document.getElementById("setArrayElement");
+            var setArrayButton = document.getElementById("setArrayButton");
+            var btnElements = document.querySelectorAll('.btn_result');
+            var txtResultEl = document.querySelector('.txt_result');
+            var btnElsLength = btnElements.length;
+            var i = 0;
+            var setArray =[];
+            //var clickNumber = 0;
+            var inputArr = getInputNumber();
+            setArrayButton.addEventListener('click', getInputNumber);     
+
+            function getInputNumber() {
+                // var arr = [];
+                if(setInputNumber.value){
+                    setArray.push(setInputNumber.value);
+                    setArrayElement.innerHTML = "{ " + setArray + " }";
+                }                          
+                // clickNumber ++;     
+                
+                // arr = setArray;
+                // console.log(clickNumber); 
+                return setArray;
+                //for(let)
+                 
+            }
+
+            /* 최대값 */
+            function getMaxNum(arr) {
+                const n = Math.max.apply(null, arr);                
+                return "최대값은 "+ n +"입니다.";
+            }
+
+            /* 최소값 */
+            function getMinNum(arr) {
+                const n = Math.min.apply(null, arr); 
+                return "최소값은 "+ n +"입니다.";
+            }
+
+            /* 평균값 */
+            function getAverageNum(arr) {
+                // 해당 함수를 완성하시오
+                const average = arr.reduce((prev, curr) => Number(prev) + Number(curr)) / arr.length;
+                return "평군은 "+ average +" 입니다.";
+            }
+
+            /* 홀수값 */
+            function getOddNum(arr) {
+                // 해당 함수를 완성하시오
+                const oddNumberArray = arr.map(function(obj){
+                    var robj;
+                    const checkNumber = (obj % 2 === 0)? "even" : "odd";
+                    if(checkNumber == "odd"){
+                        robj = obj
+                    }          
+                    return robj;
+                });
+                return "홀수는 "+ oddNumberArray + "입니다.";
+            }
+            
+
+            function viewResult(result) {
+                txtResultEl.innerHTML = result;
+            }
+
+            function getResult(e) {
+                var resultType = e.currentTarget.getAttribute('data-result-type');
+                var result = 0;
+                switch (resultType) {
+                    case 'max' :
+                        result = getMaxNum(inputArr);
+                        break;
+                    case 'min' :
+                        result = getMinNum(inputArr);
+                        break;
+                    case 'avg' :
+                        result = getAverageNum(inputArr);
+                        break;
+                    case 'odd' :
+                    result = getOddNum(inputArr);
+                    break;
+                }
+                viewResult(result);
+            }
+            function init() {
+                for(i; i < btnElsLength ; i++) {
+                btnElements[i].addEventListener('click', getResult);
+                }  
+            }
+            init();
+            })();
+    </script>
+</body>
+</html>

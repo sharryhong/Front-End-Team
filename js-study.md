@@ -7,7 +7,7 @@
 
 [https://poiemaweb.com/](https://poiemaweb.com/)
 
-### 기본 개념 !
+### 기본 개념 
 
 [_1_ 프로그래밍이란?](https://poiemaweb.com/coding) \(a\)
 
@@ -122,62 +122,11 @@
 
 [_14_ Babel과 Webpack을 이용한 ES6 환경 구축 ②](https://poiemaweb.com/es6-babel-webpack-2)
 
-## 스터디 제안
-
-> 각자의 깃북을 만들어 챕터별 간단하게 정리해보는 방식 : [https://april.gitbook.io/learning-js/](https://april.gitbook.io/learning-js/) 를 참고합니다.
-
-### 4월
-
-#### 커리큘럼 : 기초
-
-* a단계 : 기본 개념 4개, 기본 문법 4개, es6 1개
-
-#### 실습
-
-* inputNumber, Modal, 햄버거메뉴 등 실습 1, 2단계 씩 할 수 있는 만큼 진행
-
-### 5 ~ 6월
-
-#### 커리큘럼 : 초급
-
-* b단계 : 기본 개념 1개, 기본 문법 6개,  js 특징 2개, es6 1개
-* c단계 : 표준 내장 객체 소개 2개, 돔 이벤트 3개
-
-#### 실습
-
-* 실습을 통한 DOM제어 및 실무 능력 향상. 1, 2단계 이후 단계에도 도전
-
-### 6 ~ 7월
-
-#### 커리큘럼 : 초급
-
-* d단계 : 표준 내장 객체 7개
-
-#### 실습
-
-* 실습 추가. UI제어 JS 실무 가능  
-
-### 8월 ~
-
-#### 커리큘럼 : 중급
-
-* e단계 : js 특징 4개, es6 2개
-
-#### 실습
-
-* 기존에 실습한 것들을 컴포넌트화, 실제 개발환경과 동일하게 구현
-
-#### 커리큘럼 :
-
-* f단계 : 데이터 통신 3개,  es6 1개, 이 외에도 백엔드 api기초 지식 동시 필요 \(http등\)
-
-#### 실습
-
-* 실제 백엔드 api 연동하여 구현해보며 나오는 이슈들을 접하고 해결해본다.
+#### 
 
 ## 스터디 진행 정리
 
-### 1주차 - 4월 3째주 \(4/15~19\)
+### 기초 진행  \(4/15~19\)
 
 [1 프로그래밍이란?](https://poiemaweb.com/coding) \(a\)
 
@@ -205,4 +154,46 @@
 
 * Webpack : [https://medium.com/@OutOfBedlam/webpack-%EC%86%8C%EA%B0%9C-d595f93d5c28](https://medium.com/@OutOfBedlam/webpack-소개-d595f93d5c28)
 * Gulp, Webpack 차이 : [https://fullest-sway.me/blog/2017/03/29/tool-each/](https://fullest-sway.me/blog/2017/03/29/tool-each/)
+
+## studyCoP  
+
+01. 비트와 바이트 \(190605\) 
+
+*  [https://www.youtube.com/watch?v=2NQI4hqvWiM&list=PL2rijbugmnWSdcqiKeJFqOw\_WLxcJT7cm&index=5](https://www.youtube.com/watch?v=2NQI4hqvWiM&list=PL2rijbugmnWSdcqiKeJFqOw_WLxcJT7cm&index=5) 
+
+02 .진수, 연산자 \(190613\) 
+
+* 진수 [https://www.youtube.com/watch?v=sIBEbPt3RvU&list=PL2rijbugmnWSdcqiKeJFqOw\_WLxcJT7cm&index=6](https://www.youtube.com/watch?v=sIBEbPt3RvU&list=PL2rijbugmnWSdcqiKeJFqOw_WLxcJT7cm&index=6) 
+* 연산자 [https://poiemaweb.com/js-operator](https://poiemaweb.com/js-operator) 
+
+03. 데이터타입과 변수 \(190619\) 
+
+* [https://poiemaweb.com/js-data-type-variable](https://poiemaweb.com/js-data-type-variable) // 나중에 해도 되는 건 스킵 
+* 변수를 함수 밖 or 내부에서 선언하는 차이 알아보기 
+* 굳이 변수로 사용하지 않아도 될때는? 
+* var의 문제점, 즉시실행함수
+* let, const설명
+* 참조변수와 call by reference\(인프런강의\) : 나중에 하기 
+* 조건문 설명 \(+인프런 과제\) 
+
+04. 반복문 \(190625\)
+
+* 인프런강의 반복문1, 2 진행 
+* 반복문 인프 과제 
+
+05. 배열 \(과제: 배열로 구구단 다시 구현\) 
+
+06. 함수 \(과제: 함수를 활용해 구구단 다시 구현\) 
+
+07. 객체 \(과제: 객체를 활용해 구구단 다시 구현\)
+
+08. 연습문제3 소수를 객체, 메소드를 사용하여 코드리펙토링  
+
+09. 배열 메소드 추가 스터디 
+
+10. 조건문2 \(switch-case\), 객체2 \(생성자\) 
+
+11. 프로토타입, DOM
+
+12. 계산기 프로그래밍 시작 
 

@@ -1,10 +1,11 @@
 # Table of contents
 
 * [Front-End 개발을 위한 자료 모음](README.md)
+* [JS Study - Step01](js-study-step01.md)
+* [JS Study](js-study.md)
 * [How to Study](howtostudy.md)
 * [JavaScript and JavaScript Engine](javascript-javascript-engine.md)
 * [JavaScript?](javascript.md)
-* [JS Study](js-study.md)
 
 ## JavaScript lexical grammar
 
@@ -25,8 +26,17 @@
 * [Modal \(layer popup\)](freeform-project/modal-layer-popup.md)
 * [formVaildation](freeform-project/formvaildation.md)
 * [Select](freeform-project/select.md)
-* [bmi](freeform-project/bmi.md)
-* [test](freeform-project/test.md)
+* [BMI](freeform-project/bmi.md)
+* [Operator](freeform-project/operator.md)
+* [PrimeNumber](freeform-project/primenumber.md)
+* [If\(Condition\)](freeform-project/if-condition.md)
+* [loop](freeform-project/loop.md)
+* [array1](freeform-project/array1.md)
+* [array2](freeform-project/array.md)
+* [loop2](freeform-project/loop2.md)
+* [function](freeform-project/function.md)
+* [function2](freeform-project/function2.md)
+* [Object](freeform-project/object.md)
 
 ## Tutorial
 
