@@ -10,10 +10,11 @@
 - gugudan 객체에 앞 단계에서 작성한 함수를 메소드로 추가한다.
 - 이전 과제 프로그램을 시작하는 main() 함수를 사용했지만, 이번에는 즉시실행함수로 만들어본다. 
 
-```(function()(
+```javascript
+(function()(
   let gugudan = {}                // 객체 생성 
   gugudan.calculate = function {  // 메소드 추가 
     // ...
   }
-));```
-
+));
+```
