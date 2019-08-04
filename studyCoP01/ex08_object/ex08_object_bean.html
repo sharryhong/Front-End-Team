@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OBJECT 를 활용한 구구단</title>
+    <style>
+    .multiplcation{display:flex}
+    .box_grade{width:200px;}
+
+    </style>
+</head>
+<body>
+    <h2>구구단</h2>
+    <p>OBJECT 사용으로 2~9단 결과를 배열에 담아, 화면에 출력합니다.</p>
+    <div class="multiplcation">
+        
+    </div>
+    <script>
+    
+    (function () {
+
+        "use strict";
+        const multiplcationElem = document.querySelector('.multiplcation');
+        let gugudan = {}; // 객체 생성  
+        let results = [];               
+
+        gugudan.calculate = function (grade) {  // 메소드 추가 
+            for(var i = 1; i <= 9 ; i++){
+                results[i] = grade*i;
+            }
+            return results;
+        }
+        
+        gugudan.createGradeBox = function (grade){                      
+            const createElementBoxGrade = document.createElement('div');
+            createElementBoxGrade.className = 'box_grade';
+            multiplcationElem.appendChild(createElementBoxGrade);            
+        }                           
+        
+        gugudan.print = function(element , grade){  
+            gugudan.calculate(grade);
+            var str = '';
+            str += "<h3>"+grade + " 단" + '</h3>';            
+            for(var i = 2 ; i <= 9 ; i++){         
+                str +=  grade + '*' + i + '='; 
+                str += results[i]  ;
+                str += '<br>';
+            }              
+            element.innerHTML += str;                  
+        }          
+        
+        for(var i = 2 ; i <=9 ; i++ ){ 
+            gugudan.createGradeBox(i); 
+        }  
+        const boxGradeElem = document.querySelectorAll('.box_grade');
+        for(var i = 0 ; i<boxGradeElem.length; i++){
+            const grade = i+2
+            gugudan.print(boxGradeElem[i],grade);
+        }
+    })();
+
+    
+    </script>      
+        
+        
+    
+</body>
+</html>
