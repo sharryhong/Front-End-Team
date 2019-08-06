@@ -17,25 +17,21 @@
     <script>
         'use strict';
         (function() {
-            // 1. 인풋창에 숫자 입력 받기
             let inputNumber = document.querySelector("#inputNumber");
             let checkButton = document.querySelector("#checkButton");
 
-            inputNumber.addEventListener("keydown", function() {
+            // inputNumber.addEventListener("keydown", function() {
+            // });
 
-                checkButton.addEventListener("click", function(){
-
-                    let num = Number(inputNumber.value);
-
-                    if(num !== 1 && (num % 1) === 0 && (num % num) === 0) {
-                        alert(num + " (은)는 소수입니다.");
-                    } 
-                    else {
-                        alert(num + "(은)는 소수가 아닙니다.");           
-                    }
-                });
-            });
-        })();
+            checkButton.addEventListener("click", function(){
+                let num = Number(inputNumber.value);
+                if(num !== 1 && (num % 1) === 0 && (num % num) === 0) {
+                    alert(num + " (은)는 소수입니다.");
+                }
+                else {
+                    alert(num + "(은)는 소수가 아닙니다.");
+                }});
+            })();
     </script>
 </body>
 </html>
