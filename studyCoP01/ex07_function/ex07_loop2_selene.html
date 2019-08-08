@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>구구단 구현 - 2중 반복문 사용으로 2~9단 결과를 배열에 담아, 화면에 출력</title>
+</head>
+<body>
+    <h2>구구단 구현</h2>
+    <p>2중 반복문 사용으로 2~9단 결과를 배열에 담아, 화면에 출력합니다.</p>
+    <script>
+        "use strict";
+
+        (function(){
+            // 2 ~ 9단
+            let result = [];
+            for (let numCount = 2; numCount <= 9; numCount++){
+                // 2~9까지 곱하기 계산값 배열에 담기
+                for (let i = 0; i < 9; i++){
+                    result[i] = numCount * (i + 1);
+                }
+
+                // 출력하기
+                document.write("<h3>" + numCount + "단</h3>");
+                for (let j = 0; j < 9; j++){
+                    document.write(numCount + "X" + (j + 1) + "=" + result[j] + "<br>");
+                }
+            }
+            
+        })();
+    </script>
+</body>
+</html>
