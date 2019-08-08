@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>구구단 구현 - 190802실습내용</title>
+</head>
+<body>
+    <h2>구구단 구현</h2>
+    
+    <script>
+        "use strict";
+
+        (function(){
+            // Step.1
+            // for (let i = 1; i <= 9 ; i++){
+            //     let number = 2;
+            //     document.write(number + "*" + i + "=" + number * i + "<br>");
+            // }
+
+            // Step.2
+            // 2 * 1 = 2
+            // ...
+            // 2 * 9 = 18 
+            // 3 * 1 = 3
+            // 초기;조건;증감
+            // for (let number = 2; number <= 9; number++){
+            //     for (let i = 1; i <=9; i++){
+            //         document.write(number + "*" + i + "=" + number * i + "<br>");
+            //     }
+            // }
+
+            // Step.3 배열로 리펙토링
+            // let result = []; // 각 단이 결과 배열에 담기 [2,3, ...]
+            // for (let i = 0; i < 9; i++){
+            //     let number = 2;
+            //     result[i] = number * (i + 1);
+            // }
+            // result[0] = 2 * 1;
+            // result[1] = 2 * 2;
+            // result[2] = 2 * 3;
+            // console.log(result[0]);
+            
+            let result = [];
+            for (let number = 2; number <= 9; number++){
+                // 1. result배열에 2단의 결과값을 저장 [2,4,6,8,...,18]
+                for (let i = 0; i < 9; i++){
+                    result[i] = number * (i + 1);
+                }
+                // console.log('nn', result);
+
+                // 2. result 를 출력 
+                // document.write(result[0] + '<br>');
+                // document.write(result[1] + '<br>');
+                // document.write(result[2] + '<br>');
+                // document.write(result[3] + '<br>');
+                // document.write(result[4] + '<br>');
+                // document.write(result[5] + '<br>');
+                // document.write(result[6] + '<br>');
+                // document.write(result[7] + '<br>');
+                // document.write(result[8] + '<br>');
+                
+                document.write('<h3>' + number + '단 </h3>');
+
+                for(let j = 0; j < 9; j++){
+                    document.write(number + 'X' + (j + 1) + '=' + result[j] + '<br>');
+                }
+
+                // console.log(result);
+            }
+
+        })();
+    </script>
+
+</body>
+</html>
