@@ -10,34 +10,34 @@
     <h2>함수를 활용해 구구단 구현</h2>
     
     <script>
-        "use strict";
+        "use script"
 
-        // 구구단 반복문 사용하여 2단에서 9단까지 출력하기
-        // let resultsNumber = [];
-
-        // for (let i = 2; i <= 9; i++) {
-        //     for (let j = 1; j <= 9; j++) {
-        //         resultsNumber.push(i * j);
-        //     }
-        // }
-        // document.write('<div>' + i + 'X' + j + '=' + i * j + '</div>');
-        // console.log(resultsNumber);
-        
-        // 함수를 활용해보기
-        function calculrate(number) {
-            let resultsNumber = [];
-            for (let j = 1; j <= 9; j++) {
-                resultsNumber.push(number * j);
+        function calculrate(num) {
+            let result = [];
+            for (let i = 0; i < 9; i++){
+                result[i] = num * (i + 1);
             }
-
-            document.write(number + '단 <br>', resultsNumber);
-            return resultsNumber;
+            return result;
+        }
+        
+        function print(result) {
+            for(let j = 0; j < 9; j++){
+                // document.write(number + 'X' + (j + 1) + '=' + result[j] + '<br>');
+                // document.write(result + 'X' + (j + 1) + '=' + result * (j + 1) + '<br>');
+                document.write(result + 'X' + (j + 1) + '=' + result * (j + 1) + '<br>');
+            }
         }
 
-        // calculrate(4); 
-        console.log(calculrate(4));
-    </script>
+        function gogodan(){
+            for (let number = 2; number <= 9; number++){
+                document.write("<h3>" + number + "단</h3>");
+                calculrate(number);
+                print(number);
+            }
+        }
 
+        gogodan();
+    </script>
 </body>
 </html>
 
