@@ -40,12 +40,12 @@
         }                           
         
         gugudan.print = function(element , grade){  
-            gugudan.calculate(grade);
+            this.calculate(grade);
             var str = '';
-            str += "<h3>"+grade + " 단" + '</h3>';            
+            str += '<h3>'+grade + ' 단' + '</h3>';            
             for(var i = 2 ; i <= 9 ; i++){         
                 str +=  grade + '*' + i + '='; 
-                str += results[i]  ;
+                str += results[i];
                 str += '<br>';
             }              
             element.innerHTML += str;                  
@@ -56,7 +56,7 @@
         }  
         const boxGradeElem = document.querySelectorAll('.box_grade');
         for(var i = 0 ; i<boxGradeElem.length; i++){
-            const grade = i+2
+            const grade = i+2;
             gugudan.print(boxGradeElem[i],grade);
         }
     })();
