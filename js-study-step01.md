@@ -88,5 +88,14 @@ description: FT개발을 위한 장기적인 스터디 중 1단계
 * 객체에서 this 
 * 과제 - 객체로 구구단 리펙토링 : [https://www.inflearn.com/course/javascript-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-codesquad-masters\_lv1/lecture/10715](https://www.inflearn.com/course/javascript-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-codesquad-masters_lv1/lecture/10715) 
 
+### 1-10. Javascript 핵심개념1
+
+* **인프런 Javascript 핵심개념알아보기 강의 \(**[**https://www.inflearn.com/course/핵심개념-javascript-flow**](https://www.inflearn.com/course/%ED%95%B5%EC%8B%AC%EA%B0%9C%EB%85%90-javascript-flow)**\)**
+* **기본형과 참조형**
+* **함수 호이스팅**
+* **함수 선언문과 함수 표현식**
+* **함수스코프, 실행컨텍스트**
+* **콜백함수** 
+
 이후 추가 예정 
 
