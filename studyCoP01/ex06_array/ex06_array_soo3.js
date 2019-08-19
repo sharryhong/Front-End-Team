@@ -23,25 +23,27 @@
     /* 평균값 */
     function getAverageNum(arr) {
         var arrayLength = arr.length;
-        var avg = "";
-        for(var i = 0; i<arrayLength; i++){
-            var sum =+ arr[i];
+        var sum = 0;
+        var avg = 0.0;
+        for(var i = 0; i < arrayLength; i++){
+            sum += Number(arr[i]);
         }
-        var avg = sum / arrayLength;
+        avg = sum / arrayLength;
         return avg
     }
 
     /* 홀수값 */
-    function getOddNum(arr) {
-        var odd = "";
-        if(Number(arr[i]) % 2 === 1){
-            var odd = arr+"은 홀수입니다.";
-        }else{
-            var odd = arr+"은 짝수입니다.";
-        }
-        // 해당 함수를 완성하시오
-        return odd;
+    function getOddNum(arr) {    
+        var arrayLength = arr.length;
+        var oddNum = [];
+        for(var i = 0; i < arrayLength; i++){
+            if(Number(arr[i]) % 2 === 1){
+                oddNum[i] = Number(arr[i]);
+                console.log(oddNum[i] + "는 홀수입니다.");
+            }
+        } return oddNum + "는 홀수입니다."; // console로 찍을 경우 출력이 되었으나, return의 위치에 따라 값의 출력이 달라져, 배열의 변수를 선언하여 값을 넣음.
     }
+
     function getInputNumber() {
         var arr = [];
         for (var i = 0; i < 5; i++) {
@@ -79,4 +81,6 @@
         }  
     }
     init();
+
+    
 })();
