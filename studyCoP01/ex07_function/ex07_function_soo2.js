@@ -10,35 +10,25 @@
     // 이전 이미지 경로 구하는 함수
     function preImageList(){
         currentImgIndex = currentImgIndex - 1;
-        imageNameChange();
+        return imageNameChange();
     }
 
     // 다음 이미지 경로를 구하는 함수
     function nextImageList(){
         currentImgIndex = currentImgIndex + 1;
-        imageNameChange();
+        return imageNameChange();
     }
-
-    // 현재 이미지 index (currentImgIndex값) 구하는 함수
-    // function indexImage(){
-    //     var idx = null;
-    //     if(idx === -1){
-    //         currentImgIndex = 2;
-    //     }else if(idx === 3){
-    //         currentImgIndex = 0;
-    //     }
-    // }
 
     // 이미지의 src값을 변경하는 함수
     function imageNameChange(){
         if(currentImgIndex === -1){
-            console.log(currentImgIndex);
+            // console.log(currentImgIndex);
             currentImgIndex = 2;
         }else if(currentImgIndex === 3){
-            console.log(currentImgIndex);
+            // console.log(currentImgIndex);
             currentImgIndex = 0;
         }
-        return slideImgEl.setAttribute('src',slideImgArr[currentImgIndex]);
+        return init();
     }
 
     // 클릭 이벤트 등록하는 함수 (addEventListener)
