@@ -38,6 +38,7 @@
 * [function](freeform-project/function.md)
 * [function2](freeform-project/function2.md)
 * [Object](freeform-project/object.md)
+* [homework\_oop\_this](freeform-project/homework_oop_this.md)
 
 ## Tutorial
 
