@@ -16,6 +16,16 @@ description: 스터디콥10 예습
 
 
 
+this추가 강의 \(시간되는 분 듣기\) 
+
+* 함수 실행에서의 this [https://www.youtube.com/watch?v=ayyuU0xdbIU](https://www.youtube.com/watch?v=ayyuU0xdbIU) , [https://www.youtube.com/watch?v=WOTibnvqF-c](https://www.youtube.com/watch?v=WOTibnvqF-c)
+* 객체 메서드에서의 this [https://www.youtube.com/watch?v=Jm6SkIQreY0](https://www.youtube.com/watch?v=Jm6SkIQreY0) 
+* call, bind, apply [https://www.youtube.com/watch?v=HJ\_LxtCaNxs](https://www.youtube.com/watch?v=HJ_LxtCaNxs) 
+* 생성자 new 객에서의 this [https://www.youtube.com/watch?v=0Khg5HF\_AXA](https://www.youtube.com/watch?v=0Khg5HF_AXA) 
+* 이벤트핸들러와 this [https://www.youtube.com/watch?v=1V5yDM2rK4Q&t=178s](https://www.youtube.com/watch?v=1V5yDM2rK4Q&t=178s)
+
+
+
 ### 3개의 강의를 들은 후 아래 코드를 이해해봅시다. \(출처: [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/this](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/this)\)
 
 ```text
@@ -25,7 +35,7 @@ function bluify(e) {
   console.log(this === e.currentTarget); 
   // currentTarget과 target이 같은 객체면 true
   console.log(this === e.target);
-  this.style.backgroundColor = '#A5D9F3';
+  this.style.backgroundColor = '#A5D9F3'; // this보다는 e.target이나 e.currentTarget권장 
 }
 
 // 문서 내 모든 요소의 목록
