@@ -26,7 +26,7 @@ this추가 강의 \(시간되는 분 듣기\)
 
 
 
-### 3개의 강의를 들은 후 아래 코드를 이해해봅시다. \(출처: [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/this](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/this)\)
+### 필수 3개의 강의를 들은 후 아래 코드를 이해해봅시다. \(출처: [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/this](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/this)\)
 
 ```text
 // 처리기로 호출하면 관련 객체를 파랗게 만듦
