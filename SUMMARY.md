@@ -7,6 +7,10 @@
 * [JavaScript and JavaScript Engine](javascript-javascript-engine.md)
 * [JavaScript?](javascript.md)
 
+## Computer Science
+
+* [Programming paradigm](computer-science/programming-paradigm.md)
+
 ## JavaScript lexical grammar
 
 * [JAVASCRIPT LEXICAL GRAMMAR](javascript-lexical-grammar/javascript-lexical-grammar/README.md)
