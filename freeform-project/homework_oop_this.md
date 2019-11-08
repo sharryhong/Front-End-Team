@@ -14,7 +14,9 @@ description: 스터디콥10 예습
 
     3. 코드종 - 자바스크립트의 this : [https://www.youtube.com/watch?v=PAr92molMHU&list=PLuBMRNcyzsWxcnDdAmJWyWYXuExyP9aS1&index=6](https://www.youtube.com/watch?v=PAr92molMHU&list=PLuBMRNcyzsWxcnDdAmJWyWYXuExyP9aS1&index=6)
 
+### 과제 
 
+Selectbox [https://front-end-team.gitbook.io/front-end/freeform-project/select](https://front-end-team.gitbook.io/front-end/freeform-project/select) 
 
 this추가 강의 \(시간되는 분 듣기\) 
 
