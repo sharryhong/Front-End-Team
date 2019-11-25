@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>javascript</title>
+    </head>
+    <style>
+    .menu {background:green}
+    .menu_link{display:inline-block;padding:10px;background:dodgerblue;color:#fff;font-size:20px;line-height:20px;}
+
+    .active{background:goldenrod}
+    .on{border:1px solid red}
+    .result{min-width:30px;height:30px;padding:10px;background:orange;text-align:center;box-sizing:border-box}
+    .confirm{text-decoration:underline}
+    </style>
+<body>
+    <input type="text" id="textInput" value=""><button id="buttonResult">결과를 알려주세요.</button>
+    <div class="result"></div>
+    <script>
+    'strict use';
+    // 문자 입력시 출력 안되게 리팩토링 완료
+    let keyNumber = document.getElementById("textInput");
+    let buttonResult = document.getElementById("buttonResult");
+    let resultText = document.querySelector(".result");
+
+    buttonResult.addEventListener("click", function(){
+        let keyNumberResult = Number(keyNumber.value);
+        if(keyNumberResult%2 === 0){
+            resultText.innerHTML = keyNumberResult+'는 짝수입니다.';
+        }else if(isNaN(keyNumberResult)){
+            resultText.innerHTML = '문자를 입력하였습니다. 다시 입력하여 주세요.';
+        }
+        else{
+            resultText.innerHTML = keyNumberResult+'는 홀수입니다.';
+        }
+    });
+
+    // 아래 처럼 콜백함수를 불러 올 수 있음.
+    // function checkOddEven(){
+    //     let keyNumberResult = keyNumber.value;
+    //     if(keyNumberResult%2 === 0){
+    //         resultText.innerHTML = keyNumberResult+'는 짝수입니다.';
+    //     }else{
+    //         resultText.innerHTML = keyNumberResult+'는 홀수입니다.';
+    //     }
+    // }
+    // buttonResult.addEventListener("click",  checkOddEven);
+    </script>
+
+</body>
+</html>
