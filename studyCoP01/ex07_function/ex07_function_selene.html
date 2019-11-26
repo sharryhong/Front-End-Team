@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>함수 과제</title>
+</head>
+<body>
+    <h2>함수를 활용해 구구단 구현</h2>
+    
+    <script>
+        "use script";
+
+        // todo. 즉시실행함수란? 함수의 개념 이해하기
+        (function(){
+            // todo. return 반환값(return value)의 개념 이해하기
+            function calculrate(num) {
+                let result = [];
+                for (let i = 0; i < 9; i++){
+                    result[i] = num * (i + 1);
+                }
+                return result;
+            }
+            
+            function print(number, result) {
+                // result = [2,4,6,...,18] 배열 0~8위치에 저장된 결과값을 출력
+                // number 값을 받아오기
+                for(let j = 0; j < 9; j++){
+                    // document.write(result[j] + '<br>');
+                    document.write(number + 'X' + (j + 1) + '=' + result[j] + '<br>');
+                }
+            }
+
+            for (let number = 2; number <= 9; number++) {
+                document.write("<h3>" + number + "단</h3>");
+
+                // calculrate 함수에 저장된 result 결과값을 resultGugudan변수에 담는다.
+                // todo. 변수의 개념을 이해해보기
+                let resultNumber = number;
+                let resultGugudan = calculrate(number);
+
+                // console로 number값과 resultGugudan변수에 저장된 결과값을 확인해보기
+                console.log('number', number);
+                console.log('resultGugudan', resultGugudan);
+
+                // resultGugudan변수에 담겨있는 결과값을 불러오기
+                print(resultNumber, resultGugudan);
+            }
+        })();
+    </script>
+</body>
+</html>
