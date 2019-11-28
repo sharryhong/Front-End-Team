@@ -9,15 +9,14 @@
 </head>
 <body>
 <div id="wrap">
-  <h1>영화 예매</h1>
+  <h1>영화 예매 사이트</h1>
   <div id="content">
     <div id="main">
-      <h2>영화 예매 본문</h2>
       <div class="code_block">
-        <h3>영화 예매 정보 연동을 위한 API 정보</h3>
+        <h2>영화 예매 정보 연동을 위한 API 정보</h2>
         <strong>영화 예매 정보 불러오기</strong>
         <code class="info_api">
-          URI
+          URI : https://randomapi.com/api/daec9f28d62ee30b0624ffda65ae3a08
 
           Request
 
@@ -25,6 +24,65 @@
 
         </code>
         <button class="btn_open">api 정보 보기</button>
+      </div>
+      <div class="article">
+        <div class="info_movie">
+          <h2>영화 상영 정보</h2>
+          <strong>영화 선택</strong>
+          <ul>
+            <li>영화 제목 정보1</li>
+            <li>영화 제목 정보2</li>
+            <li>영화 제목 정보3</li>
+          </ul>
+          <strong>극장 선택</strong>
+          <ul>
+            <li>용산</li>
+            <li>은평구</li>
+            <li>종로구</li>
+          </ul>
+          <label for="reservationDate">날짜 선택</label>
+          <input type="date" id="reservationDate">
+          <strong>상영시간표</strong>
+          <ul>
+            <li>11:00</li>
+          </ul>
+          <label for="countAdult">성인 인원 선택</label>
+          <select id="countAdult">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+          <label for="countStudent">학생 인원 선택</label>
+          <select id="countStudent">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+        <div class="info_select">
+          <h3>예매 선택 정보</h3>
+          <strong>겨울왕국</strong>
+          <dl>
+            <dt>별점</dt>
+            <dd>8.6</dd>
+            <dt>극장</dt>
+            <dd>메가박스 강남</dd>
+            <dt>날짜</dt>
+            <dd>2019.11.29(금), 22:55</dd>
+            <dt>인원</dt>
+            <dd>8</dd>
+          </dl>
+        </div>
       </div>
     </div>
     <div id="footer"></div>
