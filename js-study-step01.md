@@ -90,7 +90,6 @@ description: FT개발을 위한 장기적인 스터디 중 1단계
 
 ### 1-10. Javascript 핵심개념1
 
-* **인프런 Javascript 핵심개념알아보기 강의 \(**[**https://www.inflearn.com/course/핵심개념-javascript-flow**](https://www.inflearn.com/course/%ED%95%B5%EC%8B%AC%EA%B0%9C%EB%85%90-javascript-flow)**\)**
 * **기본형과 참조형**
 * **함수 호이스팅**
 * **함수 선언문과 함수 표현식**
