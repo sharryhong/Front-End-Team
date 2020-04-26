@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>함수</title>
+    <style>
+    .multiplcation , .multiplcation01{overflow:hidden}
+    .box_grade , .box_grade01{float:left;margin-right:20px}
+    .box_grade strong{display:block}
+    </style>
+</head>
+<body>
+    <h2>구구단</h2>
+    <p>2중 반복문 사용으로 2~9단 결과를 배열에 담아, 화면에 출력합니다.</p>
+    <div class="multiplcation">
+        <div class="box_grade">
+        </div>
+    </div>
+    <script>
+    "use strict";
+
+    let multiplcation = document.querySelector('.multiplcation');
+    let boxGrade = document.querySelectorAll('.box_grade');
+    let multiplcationGroup = "";
+
+    for(let i = 2 ; i <= 9 ; i++){
+        multiplcationGroup += `<div class="box_grade">`;
+        multiplcationGroup += "<strong>" + i + "단" +"</strong>";   
+        for(let n = 1 ; n<= 9 ; n++){
+             multiplcationGroup += i + "*" + n + "=" + i*n + "<br>";
+        }
+        multiplcationGroup += "</div>"
+    }
+    multiplcation.innerHTML=multiplcationGroup;    
+    </script>
+    <h2>함수를 활용한 구구단</h2>
+    <p>2중 반복문 사용으로 2~9단 결과를 배열에 담아, 화면에 출력합니다.</p>
+    <div class="multiplcation01">        
+    </div>
+    <script>
+    "use strict";
+    let multiplcation01 = document.querySelector('.multiplcation01');
+    // var results = [];
+    // var str ="";
+
+    // for(let n = 2 ; n <= 9 ; n ++){
+    //     for(let i = 1 ; i <= 9 ; i++){
+    //         results[i] = n * i;
+    //     }
+    //     str += '<div class="box_grade01">'
+    //     str += "<h2>" + n + "단"+ "</h2>";    
+    //     for(let i = 1 ; i <= 9 ; i++){     
+    //         str += i + "*" + n + "="+ results[i] + "<br>";  
+    //     }    
+               
+    //     str += '</div>'  
+
+    // }
+    // multiplcation01.innerHTML=str;    
+
+    function calculrate(num) {
+        var results = [];
+        for (var i = 1; i < 10; i++) {
+        // 계산 결과를 배열에 저장
+            results[i] = num * i;
+        }
+        return results;
+    }
+
+    function print(results) {
+        // 계산 결과를 화면에 출력
+        var str = '';
+        str += '<div class="box_grade01">'
+        str += "<h2>" + results + "단"+ "</h2>";    
+        for(let i = 1 ; i <= 9 ; i++){     
+            str += i + "*" + results + "="+ calculrate(results)[i] + "<br>";  
+        }                   
+        str += '</div>';   
+        // console.log(str);            
+        multiplcation01.innerHTML += str; 
+     
+    }
+    function main() {
+        // 나머지 코드들은 여기에 
+        for(let n = 2 ; n <= 9 ; n ++){
+            print(n);
+        }  
+    }
+    main();
+    </script>
+    <h2>이미지슬라이드</h2>
+    <div id="slideContent">
+        <button class="btn_g btn_prev">이전 이미지</button>
+        <img src="" class="slide_img" alt="">
+        <button class="btn_g btn_next">다음 이미지</button>
+    </div>        
+        
+        
+    <script>  
+    (function() {
+        'use strict';
+        var slideImgArr = ['http://shop2.daumcdn.net/shophow/sib/0_190711174317_WHFzDOodnDUymbRJWPTjsuHSjJUxUXYz','http://shop1.daumcdn.net/shophow/sib/0_190711174309_frhsqvyDAIYxSCMUnyZtbcVHddiOpCEy','http://shop3.daumcdn.net/shophow/sib/0_190711174325_rQUPoiSCCAeMENaCCNvihWEECtGFccbI'];
+        var currentImgIndex = 0;
+        var slideImgEl = document.querySelector('.slide_img');          
+
+        // 이전 이미지 경로 구하는 함수
+        function prevImage(){
+            if(currentImgIndex <= 0){
+                currentImgIndex = slideImgArr.length -1;;
+            }else{
+                currentImgIndex--;
+            }
+            transImageSrc(currentImgIndex);
+        }
+        
+        // 다음 이미지 경로를 구하는 함수
+        function nextImage(){
+            if(currentImgIndex >= slideImgArr.length -1){
+                currentImgIndex = 0;
+            }else{
+                currentImgIndex++;
+            }   
+            transImageSrc(currentImgIndex);
+        }
+    
+        // 현재 이미지 index (currentImgIndex값) 구하는 함수
+        function currentImage(){
+            // slideImgEl.src()
+        }
+    
+        // 이미지의 src값을 변경하는 함수
+        function transImageSrc(viewimage){
+            slideImgEl.src = slideImgArr[viewimage];
+        }
+    
+        // 클릭 이벤트 등록하는 함수 (addEventListener)
+        document.querySelector('.btn_prev').addEventListener('click' ,prevImage);
+        document.querySelector('.btn_next').addEventListener('click' ,nextImage);
+    
+        function init() {
+            slideImgEl.setAttribute('src',slideImgArr[currentImgIndex]);
+        }
+        init();
+    })();
+    </script>
+</body>
+</html>
+
+
+
+
+
