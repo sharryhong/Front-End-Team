@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>소수판별</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h2>소수 판별하기</h2>
+    <p>소수는 1과 자기 자신으로밖에 나누어지지 않는 1 이외의 정수.</p>
+    <input type="number" id="inputNumber" placeholder="숫자를 입력하세요." />
+    <button id="checkButton">판별하기</button>
+    
+    <script>
+        'use strict';
+        (function() {
+            let inputNumber = document.querySelector("#inputNumber");
+            let checkButton = document.querySelector("#checkButton");
+
+            checkButton.addEventListener("click", function(){
+                let num = Number(inputNumber.value);
+                if(num !== 1 && (num % 1) === 0 && (num % 2) === 1) {
+                    alert(num + " (은)는 소수입니다.");
+                } 
+                else {
+                    alert(num + "(은)는 소수가 아닙니다.");
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
