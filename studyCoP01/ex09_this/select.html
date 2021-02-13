@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>실습3 : 디자인된 셀렉트박스</title>
+    <link rel="stylesheet" href="http://html.ftdev.daum.net/webs-test-2014/basic/2team/jongha/selectbox_wa/css/reset.css">
+    <style>
+        .ico_comm {background:url(//i1.daumcdn.net/cfs.tistory/static/top/ico_tistory_140829.png) no-repeat;vertical-align:top}
+        .opt_comm {width:108px;height:37px;margin:50px auto 0;padding:21px 19px 0 0;border:1px solid #6a7076;background-color:#6a7076}
+        .opt_comm .link_selected {display:block;padding-left:28px;font-size:15px;line-height:19px;color:#fff;background-position:100% -1218px;letter-spacing:-1px}
+        .opt_comm .link_selected:hover {color:#fff;background-position:100% -1243px;text-decoration:underline}
+        .opt_comm .tit_option {display:none} /* 접근성 관련 스타일 */
+        .opt_comm .list_opt {display:none;width:103px;margin-top:18px;padding:10px 0 0 24px;border-top:1px solid #e1e2e4}
+        .opt_comm .list_opt li {float:left;width:51px;padding-top:7px}
+        .opt_comm .list_opt .link_option {font-size:15px;color:#7f858b;letter-spacing:-1px}
+        .opt_comm .list_opt .on .link_option {color:#f1631b}
+        .opt_open {height:337px;background-color:#fff}
+        .opt_open .link_selected {color:#7f858b}
+        .opt_open .link_selected:hover {color:#7f858b;background-position:100% -1218px;text-decoration:underline}
+        .opt_open .list_opt {display:block}
+        .opt_open .tit_option {display:block} /* 접근성 관련 스타일 */
+    </style>
+</head>
+<body>
+        <div class="opt_comm"> <!-- 펼침시 클래스 opt_open 부여 -->
+            <strong class="screen_out">지역 선택상자</strong>
+            <a href="#none" class="ico_comm link_selected">지역선택<span class="screen_out">선택됨</span></a>
+            <em class="screen_out tit_option">선택옵션</em> <!-- 접근성 관련 클래스 -->
+            <ul class="list_opt">
+                <li><a href="#none" class="link_option">서울</a></li>
+                <li class="on"><a href="#none" class="link_option">경기</a></li><!-- 선택된 클래스 on 부여 -->
+                <li><a href="#none" class="link_option">인천</a></li>
+                <li><a href="#none" class="link_option">부산</a></li>
+                <li><a href="#none" class="link_option">대구</a></li>
+                <li><a href="#none" class="link_option">광주</a></li>
+                <li><a href="#none" class="link_option">대전</a></li>
+                <li><a href="#none" class="link_option">울산</a></li>
+                <li><a href="#none" class="link_option">세종</a></li>
+                <li><a href="#none" class="link_option">강원</a></li>
+                <li><a href="#none" class="link_option">충북</a></li>
+                <li><a href="#none" class="link_option">충남</a></li>
+                <li><a href="#none" class="link_option">전북</a></li>
+                <li><a href="#none" class="link_option">전남</a></li>
+                <li><a href="#none" class="link_option">경북</a></li>
+                <li><a href="#none" class="link_option">경남</a></li>
+                <li><a href="#none" class="link_option">제주</a></li>
+            </ul>
+        </div>
+<script>
+"use strict";
+
+const linkSelectdButton = document.querySelector('.link_selected');
+const optSelect = document.querySelector('.opt_comm');
+let openState = false;
+
+linkSelectdButton.addEventListener('click' , function(e){
+    // e.preventDefault();
+    // console.log(openState);
+    if(openState) {
+        optSelect.classList.remove('opt_open');
+        openState = false;
+    }else{
+        optSelect.classList.add('opt_open');
+        selectOpt();
+        openState = true;
+    }
+});
+
+function selectOpt(){
+    const listOptli = document.querySelectorAll('.list_opt li');   
+    for(let i = 0; i<listOptli.length;i++){  
+        listOptli[i].addEventListener("click" , optSelectClass(i));
+    }
+    function optSelectClass(i){
+        return function(){
+            for(let i = 0; i<listOptli.length;i++){  
+                listOptli[i].classList.remove('on'); 
+            }
+            this.classList.add('on');              
+            const selectText = this.querySelector('.link_option').innerHTML;
+            // linkSelectdText = selectText;
+            // console.log(selectText);
+            linkSelectdButton.innerHTML= selectText;
+            optSelect.classList.remove('opt_open');
+            openState = false;
+        }
+    }    
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>
