@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>함수로 구구단 구현하기</title>
+</head>
+<body>
+    <script>
+        let result = [];
+
+        // 계산하기 함수
+        function calculate(n) {
+            for(let i = 1; i <= 9; i++) {
+                result[i - 1] = i * n;
+            }
+        };
+
+        // 출력하기 함수
+        function print(n) {
+            for(let j = 0; j <= 8; j++) {
+                document.write(n + " X " + (j + 1) + " = " + result[j]);
+                document.write("<br/>")
+            }
+        };
+
+        // 구구단 함수 실행
+        (function gugudan() {
+            for(let n = 2; n <= 9; n++) {
+                document.write("<h2>" + n + "단" + "</h2>")
+                calculate(n);
+                print(n);
+            }
+        })();
+    </script>
+</body>
+</html>
+
+
+
+
+
